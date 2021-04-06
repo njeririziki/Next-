@@ -5,20 +5,56 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Going Once</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Going Once
         </h1>
-
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <em>Set your own price</em> 
         </p>
-
+       
+        <div className={styles.grid}>
+       
+        
+          <div   className={styles.emailcard}>
+           <p className={styles.otherdescription}> <b>Bid</b></p> 
+            <p> Pick an item... decide how much you want to pay for it. <br/>
+             Place your bid ...<b>Highest bidder wins !!</b> </p>
+            </div>
+            <div   className={styles.emailcard}>
+              <p className={styles.otherdescription}> <b>Pay</b></p>
+              <p>We have partnered with secure payment platforms <br/>
+             to ensure that all user information and transactions are secure. </p>
+              </div>
+              <div   className={styles.emailcard}>
+              <p className={styles.otherdescription}> <b> Delivery</b></p>
+              <p> Have your purchaces delivered. 
+                <br/>Anywhere in the city <b>Free all day Every Day!</b></p>
+          </div>
+          
+          <p className={styles.otherdescription}>
+        <em> Free Delivery Guaranteed!!</em> 
+        </p>
+       
+         
+         
+         
+          <div
+            className={styles.emailcard}
+          >
+           
+            <p> <b> Further Inquiries:</b>  goingonce.gmail.com </p>
+           
+          </div>
+        </div>
+        <div className={styles.logo}>
+        <img src="/successful_purchase.svg" alt="svg"  />
+        </div>
+{/* 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -47,18 +83,19 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        </a> */}
+        @goingonce
       </footer>
     </div>
   )

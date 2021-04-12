@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import Success from '../public/successful_purchase.svg'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.logo}>
-        <img src="/successful_purchase.svg" alt="svg"  />
+        <Success/>
         </div>
 {/* 
         <div className={styles.grid}>

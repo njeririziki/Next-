@@ -25,16 +25,16 @@ function AboutPage() {
                <p style={{color:'#ffffff'}}> Contact</p>
            </div>
            <Button className={styles.headerbutton} size='large' >
-              Sign Up
+             Request Demo
            </Button>
            
             </div>
          <h1 className={styles.title} >
-         Successfull.<br/> shoping spree.
+         Simple. Reliable.<br/> Straight forward.
          </h1>
            <h1 className={styles.subtitle}  >
-                What about absurd <br/>illustrations  for your projects? 
-                <br/> Take every user on <br/> 
+                You can run your business <br/>  at your own convenience.
+                <br/> Let us show you how ... <br/> 
            </h1 >
           
            <Button className={styles.button} size='large' shape='round'>

@@ -5,7 +5,7 @@ import {Card,Typography,Space,Button, PageHeader,Breadcrumb} from 'antd'
 // import Laptop from '../../public/Laptop.svg'
 // import Man from '../../public/man_lift.svg'
  //import Work from '../public/work-from-home.svg'
-import Analytics from '../public/Analytics.svg'
+import Analytics from '../public/Business.svg'
 import styles from '../styles/About.module.css'
 
 function AboutPage() {

@@ -1,10 +1,6 @@
 import React from 'react';
 import {Card,Typography,Space,Button, PageHeader,Breadcrumb} from 'antd'
-// import Success from '../../public/successful_purchase.svg'
-// import Computer from '../../public/Computer.svg'
-// import Laptop from '../../public/Laptop.svg'
-// import Man from '../../public/man_lift.svg'
- //import Work from '../public/work-from-home.svg'
+
 import Analytics from '../public/Business.svg'
 import styles from '../styles/About.module.css'
 

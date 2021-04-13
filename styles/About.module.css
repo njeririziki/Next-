@@ -14,7 +14,7 @@
     height: 100vh;
     flex-direction: column;
     margin-top: 2em;
-    
+   
     background-color: #FFFFFF;
     
   
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     background-color:#000000; 
-  
+    overflow: hidden; 
 }
 .header{
     margin-top: 0px;
@@ -71,7 +71,7 @@
 }
 .svg{
     align-self: center;
-    width: 100%;
+    width: 60vw;
     height: 75%;
     
 }

@@ -47,7 +47,10 @@ function AboutPage() {
           
           </div>
           <div className={styles.scard}>
-          <Analytics className={styles.svg} />
+            <div className={styles.svg}>
+            <Analytics  />
+            </div>
+         
           </div>
                 
         </div>

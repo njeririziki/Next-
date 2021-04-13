@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Success from '../public/successful_purchase.svg'
+import styles from '../../styles/Home.module.css'
+import Success from '../../public/successful_purchase.svg'
 export default function Home() {
   return (
     <div className={styles.container}>

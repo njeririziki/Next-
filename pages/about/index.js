@@ -1,32 +1,36 @@
 import React from 'react';
 import {Card,Typography,Space,Button, PageHeader,Breadcrumb} from 'antd'
+import {MenuUnfoldOutlined} from '@ant-design/icons'
 // import Success from '../../public/successful_purchase.svg'
 // import Computer from '../../public/Computer.svg'
 // import Laptop from '../../public/Laptop.svg'
 // import Man from '../../public/man_lift.svg'
 // import Girl from '../../public/girl_laptop.svg'
 import Analytics from '../../public/Analytics.svg'
-import styles from '../../styles/About.module.css'
+import styles from '../../styles/Landing.module.css'
 
 function AboutPage() {
     return (
         <div className={styles.root} >
             
-          < div className={styles.fcard}>
+          < div className={styles.scard}>
           <div className={styles.header}>
             <h1 className={styles.headername}>
                 Hasibu
             </h1>
-           <div className={styles.breadcrumbs}>
+
+            <MenuUnfoldOutlined className={styles.headername}/>
+           {/* <div className={styles.breadcrumbs}>
                <p>Home </p>
                <p > About</p>
-                  <p style={{display:'flex',flexDirection:'row'}}> 
-                  Feat <p style={{marginLeft:'2px', color:'#ffffff'}}>ures<p/></p></p>
+                  <span style={{display:'flex',flexDirection:'row'}}> 
+                  <p> Feat</p> <p style={{marginLeft:'2px', color:'#ffffff'}}>ures<p/>
+                  </span>
                <p style={{color:'#ffffff'}}> Contact</p>
-           </div>
+           </div> 
            <Button className={styles.headerbutton} size='large' >
              Request Demo
-           </Button>
+           </Button> */}
            
             </div>
          <h1 className={styles.title} >
@@ -43,16 +47,13 @@ function AboutPage() {
            {/* <Button style={{ backgroundColor: '#2AB7CA', color:'#FFFFFF'}} size='large' shape='round'>
             Features
            </Button> */}
+        
            
-          
           </div>
-          <div className={styles.scard}>
-            <div className={styles.svg}>
-            <Analytics  />
-            </div>
          
-          </div>
-                
+           <div className={styles.svg}>
+            <Analytics />
+          </div>      
         </div>
     )
 }

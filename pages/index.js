@@ -1,28 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Card,Typography,Space,Button, PageHeader,Breadcrumb,Grid} from 'antd'
 import {MenuUnfoldOutlined} from '@ant-design/icons'
 import Analytics from '../public/Business.svg'
-import styles from '../styles/About.module.css'
+import styles from '../styles/Landing.module.css'
+import Header from '../Component/Header'
+import Drawer from '../Component/Drawer'
 
-const Header=()=>{
-  return(
-  <>
-  <div className={styles.breadcrumbs}>
-     <p>Home </p>
-     <p > About</p>
-       <p className={styles.breakingword}> 
-       Feat <p className={styles.shalfword}>ures<p/></p>
-       </p>
-     <p style={{color:'#ffffff'}}> Contact</p>
-   </div>
-   <Button className={styles.headerbutton}  >
-   Get Demo
-   </Button>
-   </>
-  )
-}
-
-function AboutPage() {
+function HomePage() {
+  const [open, setOpen] = useState(false);
   
   const screen = Grid.useBreakpoint()
     return (
@@ -34,7 +19,7 @@ function AboutPage() {
                 Hasibu
             </h1>
            
-            {screen.xs?  <MenuUnfoldOutlined className={styles.headername}/>
+            {screen.xs? <MenuUnfoldOutlined className={styles.headername} onClick={()=>setOpen(true)}/>
             : <Header/>}
           </div>
          <h1 className={styles.title} >
@@ -51,15 +36,14 @@ function AboutPage() {
            {/* <Button style={{ backgroundColor: '#2AB7CA', color:'#FFFFFF'}} size='large' shape='round'>
             Features
            </Button> */}
-           
-          
+            
           </div>
           <div className={styles.scard}>
           <Analytics className={styles.svg} />
           </div>
-                
+          <Drawer visible={open} onClose={()=>setOpen(false)}/>        
         </div>
     )
 }
 
-export default AboutPage
+export default HomePage

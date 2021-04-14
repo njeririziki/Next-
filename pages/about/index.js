@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Card,Typography,Space,Button, PageHeader,Breadcrumb} from 'antd'
 import {MenuUnfoldOutlined} from '@ant-design/icons'
 // import Success from '../../public/successful_purchase.svg'
@@ -7,9 +7,13 @@ import {MenuUnfoldOutlined} from '@ant-design/icons'
 // import Man from '../../public/man_lift.svg'
 // import Girl from '../../public/girl_laptop.svg'
 import Analytics from '../../public/Analytics.svg'
-import styles from '../../styles/Landing.module.css'
+import styles from '../../styles/Other.module.css'
+import LayoutHeader from '../../Component/LayoutHeader'
+
 
 function AboutPage() {
+
+  
     return (
         <div className={styles.root} >
             
@@ -18,8 +22,8 @@ function AboutPage() {
             <h1 className={styles.headername}>
                 Hasibu
             </h1>
-
-            <MenuUnfoldOutlined className={styles.headername}/>
+          <LayoutHeader white={true}/>
+         
            {/* <div className={styles.breadcrumbs}>
                <p>Home </p>
                <p > About</p>
@@ -34,7 +38,7 @@ function AboutPage() {
            
             </div>
          <h1 className={styles.title} >
-         Simple. Reliable.<br/> Straight forward.
+         Our Story.<br/> Our Mission.
          </h1>
            <h1 className={styles.subtitle}  >
                 You can run your business <br/>  at your own convenience.
@@ -42,7 +46,7 @@ function AboutPage() {
            </h1 >
           
            <Button className={styles.button} size='large' shape='round'>
-               Get Started
+               Contact Us
            </Button>
            {/* <Button style={{ backgroundColor: '#2AB7CA', color:'#FFFFFF'}} size='large' shape='round'>
             Features
@@ -53,7 +57,8 @@ function AboutPage() {
          
            <div className={styles.svg}>
             <Analytics />
-          </div>      
+          </div> 
+          
         </div>
     )
 }

@@ -9,8 +9,9 @@ const Header=({split})=>{
     return(
 
      <div className={styles.header}>
-           <div style={{width:'87px',height:'40px'}}>
-           <Logo style={{width:200, height:200}}/>
+           <div className={styles.logo} >
+            <Logo style={{width:20, height:20}}/> 
+           <h1>Hasibu</h1>
            </div>
     <div className={styles.breadcrumbs}>
         <Link href='/'>

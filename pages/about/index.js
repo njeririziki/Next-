@@ -15,11 +15,13 @@ function AboutPage() {
 
   
     return (
+      <div>
+         <LayoutHeader />  
         <div  className={styles.root}  >
             
           < div className={styles.fcard}>
         
-          <LayoutHeader />
+       
          
            {/* <div className={styles.breadcrumbs}>
                <p>Home </p>
@@ -33,12 +35,14 @@ function AboutPage() {
              Request Demo
            </Button> */}
            
-         <h1 className={styles.title} >
-         Our Story.<br/> Our Mission.
-         </h1>
+         <h2 className={styles.title} >
+         Our Story.
+         </h2>
            <h1 className={styles.subtitle}  >
-                You can run your business <br/>  at your own convenience.
-                <br/> Let us show you how ... <br/> 
+           As at the year 2021, a huge percentage of businesses 
+           in the African market place rely 
+           heavily on physical books to run majority,
+            if not all of their operations. 
            </h1 >
           
            <Button className={styles.button} size='large' shape='round'>
@@ -50,11 +54,14 @@ function AboutPage() {
         
           </div>
          <div style={{backgroundColor:'#ffffff'}} className={styles.scard}>
-         <div className={styles.svg}>
+         <div className={styles.othersvgs}>
             <Analytics />
           </div> 
          </div>
            
+         </div>
+      
+     
           
         </div>
     )

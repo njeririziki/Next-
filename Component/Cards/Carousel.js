@@ -1,24 +1,20 @@
  import React from 'react';
  import {Card,Carousel} from 'antd'
- import Computer from '../../public/Computer.svg'
+ import Analytics from '../../public/Analytics.svg'
  import Business from '../../public/Business.svg'
  import Investment from '../../public/Investment.svg'
- //const items
+ import styles from '@/styles/Landing.module.scss'
+ 
 
- const FeatCarousel = ({items}) => {
+
+ const FeatCarousel = () => {
      return ( 
-        <div style={{backgroundColor:'#bbdefb',width:'300px',
-        height:'300px'}}>
-         <Carousel autoplay>
-          <Card style={{width:'200px',height:'300px'}} >
-             <Computer/>
-          </Card>
-          <Card style={{width:'200px',height:'300px'}} >
-             <Business/>
-          </Card>
-          <Card style={{width:'200px',height:'300px'}} >
-             <Investment/>
-          </Card>
+        <div className={styles.othersvgs}>
+         <Carousel autoplay dots={false}>
+            <Analytics/>
+            <Business/>
+            <Investment/>
+         
          </Carousel>
         </div>
     

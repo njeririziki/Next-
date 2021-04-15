@@ -17,3 +17,16 @@ a {
 * {
   box-sizing: border-box;
 }
+:root {
+  --white: #ffffff;
+  --blue: #101a13;
+  --secondary: #1890FF;
+  --black:#000000;
+}
+$colors: 'white', 'primary', 'secondary';
+
+@each $color in $colors {
+  .#{$color}-color {
+      color: var(--#{$color}) !important;
+  }
+}

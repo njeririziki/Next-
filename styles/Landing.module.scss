@@ -14,7 +14,7 @@
     height: 100vh;
     flex-direction: column;
     margin-top: 2em;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     
   
 }
@@ -24,7 +24,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    background-color:#000000; 
+    background-color:var(--black); 
  
 }
 .header{
@@ -35,7 +35,12 @@
     flex-direction: row;
     justify-content: space-around;
     z-index: 1;
- 
+   
+}
+.logo{
+  width:30px;
+  height:30px;
+  position:relative
 }
 .headerdiv{
     display: flex;
@@ -66,20 +71,20 @@
 }
 .button{  
     margin: 2em 0em 0em  7em;
-   background-color: #2AB7CA;
+   background-color: var(--secondary);
    color:#FFFFFF;
    width:180px;
    height: 40px;
    border-radius: 10px;
-   border: 1px solid #2AB7CA ;
+   border: 1px solid var(--secondary) ;
 }
 .headerbutton{  
-    background-color: #2AB7CA;
+    background-color: var(--secondary);
     color:#000000;
     width:170px;
     height: 40px;
     align-self: end;
-    border: 1px solid #2AB7CA ;
+    border: 1px solid var(--secondary) ;
  }
 .buttons{
    margin-top: 30px;

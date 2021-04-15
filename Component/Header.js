@@ -1,15 +1,17 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image'
 import { Menu, Button,Grid,Drawer} from 'antd';
 import styles from '../styles/Landing.module.scss'
+import Logo from '../public/logo.svg'
 
 const Header=({split})=>{
     return(
 
      <div className={styles.header}>
-            <h1 className={styles.headername}>
-                Hasibu
-            </h1>
+           <div style={{width:'87px',height:'40px'}}>
+           <Logo style={{width:200, height:200}}/>
+           </div>
     <div className={styles.breadcrumbs}>
         <Link href='/'>
         <a className={styles.flinks}>Why Hasibu? </a>

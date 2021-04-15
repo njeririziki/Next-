@@ -25,7 +25,7 @@ const MenuComp=()=>{
             </Link>
             </Item> 
             <Item key={3}>
-            <Link href='/'>
+            <Link href='/features'>
               <a> Features</a>  
             </Link>
             </Item>

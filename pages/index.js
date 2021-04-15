@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import {Card,Typography,Space,Button, PageHeader,Breadcrumb,Grid} from 'antd'
 import {MenuUnfoldOutlined} from '@ant-design/icons'
 import Analytics from '../public/Business.svg'
-import styles from '../styles/Landing.module.css'
-import Header from '../Component/Header'
-import Drawer from '../Component/Drawer'
+import styles from '@/styles/Landing.module.scss'
+ //import Header from '@/Component/Header'
+// import Drawer from '../Component/Drawer'
+import LayoutHeader from '@/components/LayoutHeader'
 
 function HomePage() {
   const [open, setOpen] = useState(false);
@@ -14,14 +15,9 @@ function HomePage() {
         <div className={styles.root} >
             
           < div className={styles.fcard}>
-          <div className={styles.header}>
-            <h1 className={styles.headername}>
-                Hasibu
-            </h1>
-           
-            {screen.xs? <MenuUnfoldOutlined className={styles.headername} onClick={()=>setOpen(true)}/>
-            : <Header/>}
-          </div>
+       
+            <LayoutHeader split={true}/>
+        
          <h1 className={styles.title} >
          Simple. Reliable.<br/> Straight forward.
          </h1>
@@ -41,7 +37,7 @@ function HomePage() {
           <div className={styles.scard}>
           <Analytics className={styles.svg} />
           </div>
-          <Drawer visible={open} onClose={()=>setOpen(false)}/>        
+              
         </div>
     )
 }

@@ -7,22 +7,19 @@ import {MenuUnfoldOutlined} from '@ant-design/icons'
 // import Man from '../../public/man_lift.svg'
 // import Girl from '../../public/girl_laptop.svg'
 import Analytics from '../../public/Analytics.svg'
-import styles from '../../styles/Other.module.css'
-import LayoutHeader from '../../Component/LayoutHeader'
+import styles from '@/styles/Landing.module.scss'
+import LayoutHeader from '@/components/LayoutHeader'
 
 
 function AboutPage() {
 
   
     return (
-        <div className={styles.root} >
+        <div  className={styles.root}  >
             
-          < div className={styles.scard}>
-          <div className={styles.header}>
-            <h1 className={styles.headername}>
-                Hasibu
-            </h1>
-          <LayoutHeader white={true}/>
+          < div className={styles.fcard}>
+        
+          <LayoutHeader />
          
            {/* <div className={styles.breadcrumbs}>
                <p>Home </p>
@@ -36,7 +33,6 @@ function AboutPage() {
              Request Demo
            </Button> */}
            
-            </div>
          <h1 className={styles.title} >
          Our Story.<br/> Our Mission.
          </h1>
@@ -52,12 +48,13 @@ function AboutPage() {
             Features
            </Button> */}
         
-           
           </div>
-         
-           <div className={styles.svg}>
+         <div style={{backgroundColor:'#ffffff'}} className={styles.scard}>
+         <div className={styles.svg}>
             <Analytics />
           </div> 
+         </div>
+           
           
         </div>
     )

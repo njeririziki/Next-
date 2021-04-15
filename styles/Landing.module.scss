@@ -35,7 +35,12 @@
     flex-direction: row;
     justify-content: space-around;
     z-index: 1;
-  
+ 
+}
+.headerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .headername{
     align-self: start;

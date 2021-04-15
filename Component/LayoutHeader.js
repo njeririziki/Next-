@@ -3,16 +3,16 @@ import {Card,Typography,Space,Button, PageHeader,Breadcrumb,Grid} from 'antd'
 import {MenuUnfoldOutlined} from '@ant-design/icons'
 import Drawer from './Drawer'
 import Header from './Header'
-import styles from '../styles/Landing.module.css'
+import styles from '../styles/Landing.module.scss'
 
-const LayoutHeader = ({white}) => {
+const LayoutHeader = ({split}) => {
     const [open, setOpen] = useState(false);
   
     const screen = Grid.useBreakpoint()
     return (
-        <>
-        {screen.xs? <MenuUnfoldOutlined className={white?styles.blackicon:styles.headername} onClick={()=>setOpen(true)}/>
-        : <Header white={white}/>}
+       <>
+        {screen.xs? <MenuUnfoldOutlined className={split?styles.blackicon:styles.headername} onClick={()=>setOpen(true)}/>
+        : <Header split={split}/>}
         <Drawer  visible={open} onClose={()=>setOpen(false)}/>
       </>
       );

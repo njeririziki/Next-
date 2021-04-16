@@ -5,7 +5,7 @@ import LayoutHeader from '../../Component/LayoutHeader'
 import Analytics from '../../public/Analytics.svg'
  import Business from '../../public/Business.svg'
  import Investment from '../../public/Investment.svg'
- import styles from '@/styles/Landing.module.scss'
+ import styles from '@/styles/Features.module.scss'
 
 const items=[
    {key:1, obj: <Analytics/>, title:'Analytics'},
@@ -17,18 +17,22 @@ const items=[
 const Features = () => {
 
     return ( 
-       <div >
+       <div className={styles.root}>
           <LayoutHeader/>
          
-             <div style={{display:'flex',flexDirection:'column',justifyContent:'center'}}>
-             
-                <h2 className={styles.title} style={{alignSelf:'center',fontSize:"2.5em"}} >
+             <div className={styles.fpage}>
+             {/*  */}
+                    
+             <GridList data={items}  
+             className={styles.grid} />
+             <div>
+                 <h1>
                Features.
-                  </h2>
-                  <h1 className={styles.subtitle}  >
-                  
-                  </h1 >
-             <GridList style={{alignSelf:'center'}}data={items} />
+                </h1>
+                  <h2 >
+                     check out our <br/>very amazing features
+                  </h2 >
+             </div>
              </div>
      
          

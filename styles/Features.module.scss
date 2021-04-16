@@ -1,2 +1,25 @@
+ .root{
+    display: flex;
+    flex-direction: column;
+       
+   }
+   .fpage{
+    display: grid;
+ grid-template-columns: 80% 20%;
+    margin-top: 100px ;
+    margin-left: 15px;
 
-@media (max-width: 600px) {}
+   }
+   .grid{
+       width: 70vw;
+       height: 60vh;
+   }
+ 
+@media (max-width: 600px) {
+    .fpage{
+        margin-top: 50px ; 
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

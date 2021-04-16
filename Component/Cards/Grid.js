@@ -9,7 +9,7 @@ const FeatGrid = () => {
     return ( 
         <div style={{backgroundColor:'#e8f5e9',padding:'1em 1em 1em 1em',width:'fit-content', alignSelf:'center'}} >
         <Row gutter={16}>
-        <Col >
+        <Col span={8} >
             <Card 
             hoverable={true} 
             style={{ width:300,height:400 }}
@@ -17,15 +17,14 @@ const FeatGrid = () => {
             <Meta title="Analytics" description="" />
             </Card>
         </Col>
-        <Col
-       >
+        <Col span={8}    >
             <Card  hoverable={true}
         style={{ width: 300,height:400 }}
             cover={<Business/>}  >
             <Meta title="Performance Review" description="" />
             </Card>
         </Col>
-        <Col>
+        <Col span={8}>
             <Card 
             hoverable={true}
             style={{ width: 300,height:400 }}

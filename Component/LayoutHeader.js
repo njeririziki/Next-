@@ -11,7 +11,7 @@ const LayoutHeader = ({split}) => {
     const screen = Grid.useBreakpoint()
     return (
        <>
-        {screen.xs? <MenuUnfoldOutlined className={split?styles.blackicon:styles.headername} onClick={()=>setOpen(true)}/>
+        {screen.xs? <MenuUnfoldOutlined className={split?styles.headername:styles.blackicon} onClick={()=>setOpen(true)}/>
         : <Header split={split}/>}
         <Drawer  visible={open} onClose={()=>setOpen(false)}/>
       </>

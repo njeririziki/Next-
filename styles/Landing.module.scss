@@ -12,9 +12,7 @@
     height: inherit;
     flex-direction: column;
     margin-top: 2em;
-    background-color: var(--white);
-  
-  
+    background-color: var(--white);  
 }
 .scard{ 
     display: flex;
@@ -32,21 +30,30 @@
     display: flex;
     flex-direction: row;
      justify-content: space-around;
-    z-index: 1;
-    
+    z-index: 1;   
+}
+.scrolheader{
+    margin-top: 10px;
+    color: var(--black);
+    background-color: var(--white); 
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;  
+    position: fixed; 
+    border: 1px solid var(--secondary) ;
 }
 .logo{
   display: flex;
   flex-direction: row;
   width:87px;
-  height:40px;
-  
+  height:40px; 
 }
 .headerdiv{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-   
+    justify-content: space-around;  
 }
 .headername{
     align-self: start;
@@ -67,7 +74,7 @@
     }
 }
 .breadcrumbs{
-    align-self: center;
+   align-self: center;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
    grid-column-gap: 2em;
@@ -94,15 +101,15 @@
    width: 400px;
 }
 .svg{
-  
-    width: 60vw;
+    width: 50vw;
     height: 65%;   
 }
 .othersvgs{
     align-self: center;
     margin-top: 40px;
-    width: 500px;
-    height: 700px;
+    margin-right: 40px;
+    width: 700px;
+    height: 450px;
 }
 .title{
     margin: 1em 0em 0em 2em;  
@@ -137,6 +144,13 @@
         width: 60vw;
         height: 55%;     
     }
+    .othersvgs{
+        align-self: start;
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 400px;
+        height: 250px;
+    }
     .breakingword{
        
         color: #FFFFFF;
@@ -151,31 +165,38 @@
       }
       .secondpage{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
     
 }
 @media (max-width: 600px) {
     .root{
         flex-direction: column;
-        background-color: #000000;
+        background-color: var(--black);
     }
     .fcard{
         width:100vw;
         height: auto;
         margin-top: 1em;
-        background-color: #000000;
+        background-color:var(--black);
+        padding: 1em 0em 1.5em 1.5em;
     }
     .scard{
         width: 100vw;
-        height: auto;   
+        height: auto; 
+
     }
+ 
     .header{
         justify-content: space-between;
-        padding: 0em 2em 0em 2em;
+        padding: 0em 0em 0em 0em;
         color: #FFFFFF;
     }
+    .scrolheader{
+        justify-content: space-between;
+        padding: 0em 0em 0em 0em; 
+    }
+  
     .title{
      margin: 0.5em 0em 0em 0em;    
     align-self: center;
@@ -206,10 +227,24 @@
         width: 65vw;
         height: 50%;     
     }
+    .othersvgs{
+        align-self: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 300px;
+        height: 250px;  
+    }
     .secondpage{
         display: flex;
         flex-direction: column;
         
     }
+    .secondfcard{
+        width:100vw;
+        height: auto;
+        margin-top: 1em;
+        color: var(--black); 
+    }
+    
 
 }

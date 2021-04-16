@@ -7,31 +7,33 @@ import Mobile from '../../public/Mobile.svg'
 const { Meta } = Card;
 const FeatGrid = () => {
     return ( 
-        <div style={{backgroundColor:'#e8f5e9',padding:'1em 1em 1em 1em',width:'fit-content', alignSelf:'center'}} >
+        <div style={{backgroundColor:'#e8f5e9',padding:'1em 1em 1em 1em',width:'fit-content'}} >
         <Row gutter={16}>
         <Col span={8} >
             <Card 
             hoverable={true} 
-            style={{ width:300,height:400 }}
+            style={{ width:350,height:400 }}
             cover={<Analytics/>}>
             <Meta title="Analytics" description="" />
             </Card>
         </Col>
+             <Col span={8}>
+            <Card 
+            hoverable={true}
+            style={{ width:350,height:400 }}
+            cover={<Mobile/>}  >
+            <Meta title="Notifications" description="" />
+            </Card>
+            </Col>
         <Col span={8}    >
             <Card  hoverable={true}
-        style={{ width: 300,height:400 }}
+        style={{ width:350,height:400 }}
             cover={<Business/>}  >
             <Meta title="Performance Review" description="" />
             </Card>
         </Col>
-        <Col span={8}>
-            <Card 
-            hoverable={true}
-            style={{ width: 300,height:400 }}
-            cover={<Mobile/>}  >
-            <Meta title="Notifications" description="" />
-            </Card>
-        </Col>
+   
+   
         </Row>
         </div>
      );

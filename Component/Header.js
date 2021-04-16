@@ -1,20 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
 import { Menu, Button,Grid,Drawer} from 'antd';
 import styles from '../styles/Landing.module.scss'
 import Logo from '../public/logo.svg'
 
 const Header=({split})=>{
-    return(
+  const [change, setChange] = useState(false)
+  
+  const onScroll =()=>{
+    setChange(true)
+  }
 
-     <div className={styles.header}>
+    return(
+     <div onScroll={onScroll} className={change? styles.scrolheader:styles.header}>
            <div className={styles.logo} >
-            <Logo style={{width:20, height:20}}/> 
-           <h1>Hasibu</h1>
+            <Logo style={{width:'40px', height:'40px'}}/> 
+         
            </div>
     <div className={styles.breadcrumbs}>
-        <Link href='/'>
+        <Link href='/whyhasibu'>
         <a className={styles.flinks}>Why Hasibu? </a>
         </Link>
        <Link href='/about'>

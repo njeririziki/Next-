@@ -42,19 +42,17 @@ function HomePage() {
           </div>
 
           <div className={styles.scard}>
-         <Carousel className={styles.svg} />
+         <Carousel />
           </div>
         
           </div>
          
           <div className={styles.secondpage}>
-           <div className={styles.scard} style={{backgroundColor:'#e8f5e9'}}>
-            <Mobile className={styles.svg}  /> 
-           </div>
-           <div className={styles.fcard} >  
-           <h2 className={styles.title} style={{alignSelf:'center',fontSize:"2.5em"}}>
+          <div className={styles.fcard} style={{backgroundColor:'#000000'}}>
+           {/* <div className={styles.scard} style={{backgroundColor:'#e8f5e9'}}> */}
+           <h2 className={styles.title} style={{fontSize:"3.5em",color:'#ffffff',padding:'1em 1em 0em 0em'}}>
              What is Hasibu?  </h2>
-           <h1 className={styles.subtitle} style={{fontSize:"1.5em"}} >
+           <h1 className={styles.subtitle} style={{fontSize:"1.5em",color:'#ffffff',padding:'0em 1.5em 2em 1em'}} >
            Hasibu is a.......
            As at the year 2021, a huge percentage of businesses 
            in the African market place rely 
@@ -64,6 +62,9 @@ function HomePage() {
               that holds very key data about the business’s sales and debtors.
              Losing that book means losing the business in its entirety. 
            </h1 >
+           </div>
+           <div className={styles.fcard} >  
+          
            </div>
         
           

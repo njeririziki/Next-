@@ -6,7 +6,6 @@
   align-items: center;
   width:100vw;
   height: 100vh;
-  border-radius: 0px 0px 20px 20px;
   background-color: var(--black);
 }
 .title{
@@ -16,13 +15,14 @@
 .subtitle{
     width: 40vw;
     font-weight: 350;
-    font-size: 3em; 
-    color: var(--white);  
+    font-size: 2.5em; 
+    color: var(--white); 
+    margin-right: 1em ; 
 }
-.pageheader{
-   background-color: var(--white);
-   border: 1px solid var(--secondary) ;
-}
+// .pageheader{
+//    background-color: var(--white);
+//    border: 1px solid var(--secondary) ;
+// }
 .svg{
     margin-top: 100px;
     width: 600px;
@@ -38,17 +38,26 @@
     margin: 1em 1em 1em 1em;
 }
 .textdiv{
-    padding: 1em 1em 1em 1em;
-    width:50vw;
+    margin: 50px 0px 0px 200px;
+    width: 35vw;
+    align-self: center;
 }
+
+
 .othertitles{
     margin: 1em 1em 1em 1em;
-    font-size: 3em; 
+    font-size: 3em;
+     margin-left: 2em;
 }
 .othersubtitles{
     font-size: 2em;
     font-weight: 350;
-    
+   
+}
+.othersvg{
+    margin-top: 0px;
+    width: 400px;
+    height: auto; 
 }
 
 @media (max-width: 600px) {

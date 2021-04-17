@@ -8,6 +8,7 @@ import styles from '@/styles/Landing.module.scss'
 // import Drawer from '../Component/Drawer'
 import LayoutHeader from '@/components/LayoutHeader'
 import Carousel from '@/components/Cards/Carousel'
+import Footer from '@/components/Footer'
 
 
 
@@ -18,11 +19,10 @@ function HomePage() {
   const screen = Grid.useBreakpoint()
     return (
       <div>
-      
-         
+        
         <div className={styles.root} >
           < div className={styles.fcard}>
-          <LayoutHeader split={true} />  
+          <LayoutHeader split={true}  whypg={true}/>  
          <h1 className={styles.title} >
          Simple. Reliable. Straight forward.
          </h1>
@@ -53,22 +53,21 @@ function HomePage() {
            <h2 className={styles.title} style={{fontSize:"3.5em",color:'#ffffff',padding:'1em 1em 0em 0em'}}>
              What is Hasibu?  </h2>
            <h1 className={styles.subtitle} style={{fontSize:"1.5em",color:'#ffffff',padding:'0em 1.5em 2em 1em'}} >
-           Hasibu is a.......
-           As at the year 2021, a huge percentage of businesses 
-           in the African market place rely 
-           heavily on physical books to run majority,
-            if not all of their operations.  A Swahili phrase,
-             “kitabu ya madeni”, has been coined for this book
-              that holds very key data about the business’s sales and debtors.
-             Losing that book means losing the business in its entirety. 
+           Hasibu is a business management tool. It is the complete package every
+            business owner and manager is looking for 
+         
            </h1 >
+           <Button className={styles.button} size='large' shape='round'>
+               Learn more
+           </Button>
            </div>
            <div className={styles.fcard} >  
           
            </div>
         
           
-            </div>     
+            </div>  
+            <Footer/>   
         </div>
     )
 }

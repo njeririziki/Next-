@@ -11,7 +11,7 @@
     width: 50vw;
     height: inherit;
     flex-direction: column;
-    margin-top: 2em;
+    //margin-top: 2em;
     background-color: var(--white);  
 }
 .scard{ 
@@ -24,18 +24,18 @@
  
 }
 .header{
-    margin-top: 10px;
+   padding: 1em 0em 1em 0em;
     color: var(--black);
     width: 100vw;
     display: flex;
     flex-direction: row;
      justify-content: space-around;
-    z-index: 1;   
+    z-index: 1;  
+   
 }
 .scrolheader{
     margin-top: 10px;
-    color: var(--black);
-    background-color: var(--white); 
+    color:var(--white); 
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -67,7 +67,7 @@
     color: #000000;  
 }
 .shalfword{
-    margin-left: 2px;
+    
     color: #FFFFFF;
     &:hover{
         color: var(--secondary);
@@ -76,8 +76,8 @@
 .breadcrumbs{
    align-self: center;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr ;
-   grid-column-gap: 2em;
+   grid-template-columns: 1fr 1fr 1fr  ;
+   grid-column-gap: 1em;
 }
 .button{  
     margin: 2em 0em 0em  7em;

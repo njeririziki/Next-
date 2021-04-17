@@ -39,8 +39,9 @@ function AboutPage() {
          Our Story.
          </h2>
            <h1 className={styles.subtitle}  >
-           As at the year 2021, a huge percentage of businesses 
-           in the African market place rely 
+           The idea behind Hasibu is the inspired by the need to ease 
+           the complex time wasting business  operations that business managers 
+           experience everyday
            heavily on physical books to run majority,
             if not all of their operations. 
            </h1 >

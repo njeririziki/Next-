@@ -1,13 +1,16 @@
 import React from 'react';
+import {Layout} from 'antd'
 
-const Footer = () => {
+const {Footer} =Layout
+
+const FooterComp = () => {
     return (
-        <div>
+        <Footer style={{backgroundColor:'#000000',color:'#ffffff'}}>
             Contacts
             Follow us 
             @creareafrica
-        </div>
+        </Footer>
       );
 }
  
-export default Footer;
+export default FooterComp;

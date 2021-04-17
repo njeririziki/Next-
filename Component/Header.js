@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
-import { Menu, Button,Grid,Drawer} from 'antd';
+import { Menu, Button,Grid,Drawer, PageHeader,Layout} from 'antd';
 import styles from '../styles/Landing.module.scss'
 import Logo from '../public/logo.svg'
 
-const Header=({split})=>{
+const {Header} =Layout
+
+const HeaderComp=({split,whypg})=>{
   const [change, setChange] = useState(false)
   
   const onScroll =()=>{
@@ -12,11 +14,15 @@ const Header=({split})=>{
   }
 
     return(
-     <div onScroll={onScroll} className={change? styles.scrolheader:styles.header}>
-           <div className={styles.logo} >
-            <Logo style={{width:'40px', height:'40px'}}/> 
-         
-           </div>
+      <Layout>
+            <Header style={{backgroundColor:'inherit'}} className={whypg? styles.scrolheader:styles.header}>
+            <Link href='/'>
+            <h1>Hasibu</h1>  
+           
+            </Link>
+           {/* <div className={styles.logo} >
+            <Logo style={{width:'40px', height:'40px'}}/>  </div> */}
+          
     <div className={styles.breadcrumbs}>
         <Link href='/whyhasibu'>
         <a className={styles.flinks}>Why Hasibu? </a>
@@ -25,21 +31,25 @@ const Header=({split})=>{
        <a className={styles.flinks}> About </a>
        </Link>
        <Link href='/features'>
-       <a className={styles.breakingword}>  Feat 
-       <span className={split? styles.shalfword:styles.flinks}>ures</span> </a>
+       <a className={split? styles.shalfword:styles.flinks}>Features</a>
        </Link>
-       <Link href='/about'>
+       {/* <Link href='/about'>
        <a className={split? styles.shalfword:styles.flinks}> Contact</a>
-       </Link>
+       </Link> */}
         
      </div>
      <Button className={styles.headerbutton}  >
      Get Demo
      </Button>
-     </div>
+     </Header>
+
+      </Layout>
+ 
     )
   }
 
-  export default Header;
+
+
+  export default HeaderComp;
 
  

@@ -20,7 +20,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    background-color:var(--black); 
+    background-color: var(--black);  
  
 }
 .header{
@@ -76,7 +76,7 @@
 .breadcrumbs{
    align-self: center;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr  ;
+   grid-template-columns: 1fr 1fr 1fr ;
    grid-column-gap: 1em;
 }
 .button{  
@@ -108,8 +108,8 @@
     align-self: center;
     margin-top: 40px;
     margin-right: 40px;
-    width: 700px;
-    height: 450px;
+    width: 600px;
+    height: 500px;
 }
 .title{
     margin: 1em 0em 0em 2em;  
@@ -122,8 +122,12 @@
 }
 .secondpage{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    background-color: #f8f8f8;
+    padding-bottom: 10em;
 }
 
 @media (max-width: 1055px) {
@@ -157,16 +161,13 @@
       }
       .shalfword{
           margin-left: 0;
-        
+          color: #FFFFFF;
       }
       .headerbutton{
           width: 100px;
           height: auto;
       }
-      .secondpage{
-        display: flex;
-        flex-direction: column;    
-    }
+
     
 }
 @media (max-width: 600px) {

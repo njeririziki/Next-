@@ -4,18 +4,24 @@ const {Meta}= Card
 const GridCards = ({data}) => {
     return (  
          <List
-        grid={{ gutter: 16, xs: 1,
-          sm: 2,
-          md: 4,
-          lg: 4,
-          xl: 4,
-          xxl: 4,}}
+        grid={{ gutter: [35, 20], xs: 1,
+          sm: 1,
+          md: 2,
+          lg: 2,
+          xl: 2,
+          xxl: 2,}}
         dataSource={data}
+        style={{width:'900px'}}
         renderItem={total=> (
-          <List.Item key={total.key}>
+          <List.Item key={total.key}
+          style={{ fontSize:'1.5em'}}>
             <Card hoverable={true}
-            cover={total.obj}>
-           <Meta  title={total.title}/>
+            >
+           <Meta 
+           avatar={total.icon}
+           style={{fontSize:'1.5em'}}
+            title={total.title}
+                  description={total.obj}/>
             </Card>
           </List.Item>
         )}

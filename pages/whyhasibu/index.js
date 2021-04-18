@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 const WhyHasibu = () => {
     return ( 
         <div>
-             <LayoutHeader  whypg={true} split={true}/>
+             <LayoutHeader />
          <div className={styles.root}>
            <div>
            <h1 className={styles.title}>
@@ -19,11 +19,10 @@ const WhyHasibu = () => {
          It's the best platform for your business. It is just that simple.
             </h1>
            </div>
-    
             <Books className={styles.svg} />
         </div>
-        <div className={styles.textdiv}>
-            <h1 className={styles.othertitle}>
+        <div className={styles.textdiv} >
+            <h1 className={styles.othertitle} >
               Freedom from physical presence
             </h1>
             <h1 className={styles.othersubtitles}>
@@ -32,7 +31,7 @@ const WhyHasibu = () => {
          </div>
         <div className={styles.nextpage}>
         <Cloud className={styles.othersvg}/>
-            <div className={styles.textdiv} style={{marginLeft:'50px'}}>
+            <div style={{margin:'0px 0px 0px 50px',width: '35vw'}}>
             <h1 className={styles.othertitle}>
              Data Analytics
             </h1>

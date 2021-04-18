@@ -5,18 +5,18 @@
   justify-content: center;
   align-items: center;
   width:100vw;
-  height: 100vh;
+  height: 90vh;
   background-color: var(--black);
 }
 .title{
-    font-size: 2em;
-    color: var(--white);
+    font-size: 4em;
+    color:var(--white);
 }
 .subtitle{
     width: 40vw;
     font-weight: 350;
     font-size: 2.5em; 
-    color: var(--white); 
+    color:var(--white);
     margin-right: 1em ; 
 }
 // .pageheader{
@@ -24,8 +24,8 @@
 //    border: 1px solid var(--secondary) ;
 // }
 .svg{
-    margin-top: 100px;
-    width: 600px;
+    margin-top: 350px;
+    width: 570px;
     height: auto;   
 }
 .nextpage{
@@ -38,8 +38,8 @@
     margin: 1em 1em 1em 1em;
 }
 .textdiv{
-    margin: 50px 0px 0px 200px;
-    width: 35vw;
+    margin: 100px 0px 0px 300px;
+    width: 40vw;
     align-self: center;
 }
 

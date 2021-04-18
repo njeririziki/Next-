@@ -4,15 +4,32 @@
        
    }
    .fpage{
-    display: grid;
- grid-template-columns: 80% 20%;
-    margin-top: 100px ;
-    margin-left: 15px;
-
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
    }
    .grid{
-       width: 70vw;
-       height: 60vh;
+     //  margin-top:100px;
+       width: 80vh;
+       height: 80vh;
+      
+   }
+   .title{
+       padding-left: 7em;
+       width: 55vw;
+   }
+   .spage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    //background-color: var(--black);
+  background-color: #f8f8f8;
+    padding: 1em 0em 4em 0em;
+   
    }
  
 @media (max-width: 600px) {
@@ -20,6 +37,6 @@
         margin-top: 50px ; 
         display: flex;
         flex-direction: column;
-        
+        height: auto;
     }
 }

@@ -17,12 +17,18 @@ function HomePage() {
   const [open, setOpen] = useState(false);
   
   const screen = Grid.useBreakpoint()
+  const [change, setChange] = useState(false)
+  
+  const onScroll =()=>{
+    console.log('scrolled')
+    setChange(true)
+  }
     return (
       <div>
         
-        <div className={styles.root} >
+        <div className={styles.root} onScroll={onScroll} >
           < div className={styles.fcard}>
-          <LayoutHeader split={true}  whypg={true}/>  
+          <LayoutHeader split={true} home={true}/>  
          <h1 className={styles.title} >
          Simple. Reliable. Straight forward.
          </h1>
@@ -33,7 +39,9 @@ function HomePage() {
            </h1 >
           
            <Button className={styles.button} size='large' shape='round'>
-               Get Started
+           <a
+            href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
+             Get Started</a> 
            </Button>
            {/* <Button style={{ backgroundColor: '#2AB7CA', color:'#FFFFFF'}} size='large' shape='round'>
             Features
@@ -48,24 +56,29 @@ function HomePage() {
           </div>
          
           <div className={styles.secondpage}>
-          <div className={styles.fcard} style={{backgroundColor:'#000000'}}>
-           {/* <div className={styles.scard} style={{backgroundColor:'#e8f5e9'}}> */}
-           <h2 className={styles.title} style={{fontSize:"3.5em",color:'#ffffff',padding:'1em 1em 0em 0em'}}>
+        <div > 
+           <h2 className={styles.title} style={{fontSize:"3.5em",}}>
              What is Hasibu?  </h2>
-           <h1 className={styles.subtitle} style={{fontSize:"1.5em",color:'#ffffff',padding:'0em 1.5em 2em 1em'}} >
+           <h1 className={styles.subtitle} style={{fontSize:"2em",width:'60vw' }} >
            Hasibu is a business management tool. It is the complete package every
-            business owner and manager is looking for 
-         
+            business owner and manager is looking for.No matter where you are,
+            we can make it happen
            </h1 >
-           <Button className={styles.button} size='large' shape='round'>
-               Learn more
-           </Button>
-           </div>
-           <div className={styles.fcard} >  
-          
-           </div>
         
-          
+         </div>
+         <div style={{display:'flex', flexDirection:'row'}}>
+         <Mobile className={styles.svg}/>
+         <div style={{ marginTop:'300px', marginLeft:'0px' }}>
+           <h1>
+             Your best business solution
+           </h1>
+         <h1 className={styles.subtitle}  style={{fontSize:"2em",width:'40vw', marginLeft:'0px'}} >
+       No matter where you are,
+          we can make it happen
+          </h1 >
+         </div>
+        
+         </div>
             </div>  
             <Footer/>   
         </div>

@@ -9,7 +9,7 @@ import {MenuUnfoldOutlined} from '@ant-design/icons'
 import Digital from '../../public/Digital_marketing.svg'
 import styles from '@/styles/Landing.module.scss'
 import LayoutHeader from '@/components/LayoutHeader'
-
+import Footer from '@/components/Footer'
 
 function AboutPage() {
 
@@ -63,7 +63,7 @@ function AboutPage() {
            
          </div>
       
-     
+     <Footer/>
           
         </div>
     )

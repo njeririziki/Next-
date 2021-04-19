@@ -21,8 +21,9 @@ const HeaderComp=({split,whypg})=>{
             <Link href='/'>
             <h1>Hasibu</h1>    
             </Link>
-           {/* <div className={styles.logo} >
-            <Logo style={{width:'40px', height:'40px'}}/>  </div> */}
+           <div className={styles.logo} >
+            <Logo style={{width:'auto', height:'100%'}}/>  
+            </div>
           
     <div className={styles.breadcrumbs} >
         <Link href='/whyhasibu'>

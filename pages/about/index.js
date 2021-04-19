@@ -10,6 +10,7 @@ import Digital from '../../public/Digital_marketing.svg'
 import styles from '@/styles/Landing.module.scss'
 import LayoutHeader from '@/components/LayoutHeader'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 function AboutPage() {
 
@@ -59,6 +60,11 @@ function AboutPage() {
             <Digital  className={styles.svg} 
             style={{height:'700px'}} />
           </div> 
+         </div>
+       
+         <div style={{backgroundColor:'#f5f5f5', height:'100vh'}}>
+         <p> This is a security image</p> 
+         <Image src="/security_PNG.png" alt='Security image' width={500} height={500}/>
          </div>
            
          </div>

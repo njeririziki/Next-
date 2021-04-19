@@ -6,16 +6,29 @@ import Header from './Header'
 import Homeheader from './Homeheader'
 import styles from '../styles/Landing.module.scss'
 
+
+const SmallScreen=({split})=>{
+     const [open, setOpen] = useState(false);
+     return( 
+     <div style={{display:'flex', flexDirection:'row',justifyContent:'space-between', }} >
+      <h1 style={{ fontSize:'2.5em',color:'#ffffff'}}> Hasibu</h1>
+      <MenuUnfoldOutlined style={{ fontSize:'2.5em',color:'#ffffff'}} onClick={()=>setOpen(true)} />
+      <Drawer  visible={open} onClose={()=>setOpen(false)}/>
+        </div>)
+}
+
+
+
 const LayoutHeader = ({split,home}) => {
-    const [open, setOpen] = useState(false);
-  
+   
+
     const screen = Grid.useBreakpoint()
     return (
        <>
-        {screen.xs? <MenuUnfoldOutlined className={split?styles.headername:styles.blackicon} onClick={()=>setOpen(true)}/>
+        {screen.xs? <SmallScreen  />
         : (home? <Homeheader/>:  <Header split={split}/>)
              }
-        <Drawer  visible={open} onClose={()=>setOpen(false)}/>
+      
       </>
       );
 }

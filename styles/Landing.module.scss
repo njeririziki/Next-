@@ -1,9 +1,12 @@
+.bod{
+    width: 100%;
+    height: 100%;  
+}
 .root{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 100%;   
+    
 }
 
 .fcard{
@@ -114,11 +117,14 @@
 .title{
     margin: 1em 0em 0em 2em;  
     font-size: 4em;
+    font-family: Amiko, sans-serif;
+    font-weight: 700;
 }
 .subtitle{
     margin: 1em 0em 0em  4em;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 2em;
+    font-family:'Segoe UI', sans-serif;
 }
 .secondpage{
     display: flex;
@@ -128,6 +134,10 @@
     height:auto;
     background-color: #f8f8f8;
     padding-bottom: 10em;
+    padding-top: 3em;
+}
+.whattext{
+    margin-top: 1em;
 }
 
 @media (max-width: 1055px) {
@@ -167,16 +177,37 @@
           width: 100px;
           height: auto;
       }
+      .othersvgs{
+        align-self: center;
+        margin-top: 40px;
+        margin-right: 40px;
+        width: 400px;
+        height: 300px;
+    }
+    .secondpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        background-color: #f8f8f8;
+        padding-bottom: 3em;
+        padding-top: 3em;
+    }
 
     
 }
 @media (max-width: 600px) {
+    .bod{
+        width:fit-content
+    }
     .root{
         flex-direction: column;
         background-color: var(--black);
+         
     }
     .fcard{
-        width:100vw;
+         width:fit-content;
         height: auto;
         margin-top: 1em;
         background-color:var(--black);
@@ -184,10 +215,9 @@
     }
     .scard{
         width: 100vw;
-        height: auto; 
+        height: 100%; 
 
     }
- 
     .header{
         justify-content: space-between;
         padding: 0em 0em 0em 0em;
@@ -201,13 +231,13 @@
     .title{
      margin: 0.5em 0em 0em 0em;    
     align-self: center;
-    font-size: 2.5em;
+    font-size: 4em;
     color: #FFFFFF;
     }
     .subtitle{
         margin: 1em 0em 1em  0em;
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 2.5em;
         align-self: center;
         color: #FFFFFF;
     }
@@ -216,7 +246,7 @@
         align-self: center;
     }
     .headername{
-        font-size: 1.5em;
+        font-size: 3.5em;
         color: #FFFFFF;
     }
     .blackicon{
@@ -225,15 +255,16 @@
     }
     .svg{
         align-self: center;
-        width: 65vw;
-        height: 50%;     
+        width: 75vw;
+        height: 60%;     
     }
+   
     .othersvgs{
         align-self: center;
         margin-top: 0px;
         margin-right: 0px;
-        width: 300px;
-        height: 250px;  
+        width: 450px;
+        height: 400px;  
     }
     .secondpage{
         display: flex;
@@ -246,6 +277,26 @@
         margin-top: 1em;
         color: var(--black); 
     }
-    
+    .secondpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        background-color: #f8f8f8;
+        padding-bottom: 3em;
+       
+    }
+    .whattext{
+        margin-top: 5em;
+    }
+    .lasttext{
+        margin-top: 10px; 
+        margin-left:0px;
+        align-self:flex-end;
+        width: 80vw;
+        color:#000000;
+        
+    }
 
 }

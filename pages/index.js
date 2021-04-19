@@ -24,7 +24,7 @@ function HomePage() {
     setChange(true)
   }
     return (
-      <div>
+      <div className={styles.bod}>
         
         <div className={styles.root} onScroll={onScroll} >
           < div className={styles.fcard}>
@@ -56,26 +56,25 @@ function HomePage() {
           </div>
          
           <div className={styles.secondpage}>
-        <div > 
-           <h2 className={styles.title} style={{fontSize:"3.5em",}}>
+        <div className={styles.whattext} > 
+           <h2 className={styles.othertitle} style={{fontSize:"2.5em",}}>
              What is Hasibu?  </h2>
-           <h1 className={styles.subtitle} style={{fontSize:"2em",width:'60vw' }} >
+           <h1 className={styles.subtitle} 
+           style={{width:'60vw', color:'#000000', marginLeft:'0px'}} >
            Hasibu is a business management tool. It is the complete package every
             business owner and manager is looking for.No matter where you are,
             we can make it happen
            </h1 >
         
          </div>
-         <div style={{display:'flex', flexDirection:'row'}}>
+         <div style={{display:'flex', flexDirection:'column'}}>
          <Mobile className={styles.svg}/>
-         <div style={{ marginTop:'300px', marginLeft:'0px' }}>
-           <h1>
-             Your best business solution
-           </h1>
-         <h1 className={styles.subtitle}  style={{fontSize:"2em",width:'40vw', marginLeft:'0px'}} >
+         <div className={styles.lasttext} style={{ fontSize: '1.5em' }}>
+           
+         <h2 >
        No matter where you are,
           we can make it happen
-          </h1 >
+          </h2 >
          </div>
         
          </div>

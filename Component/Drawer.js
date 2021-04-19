@@ -52,8 +52,8 @@ const PageDrawer = ({visible,onClose}) => {
         closable={false}
         onClose={onClose}
         visible={visible}
-        width='150'
-      
+        width='250'
+        style={{backgroundColor:'#263238', color:'#ffffff'}}
       >
        <MenuComp/>
       </Drawer>

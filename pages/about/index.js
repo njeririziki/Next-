@@ -62,10 +62,6 @@ function AboutPage() {
           </div> 
          </div>
        
-         <div style={{backgroundColor:'#f5f5f5', height:'100vh'}}>
-         <p> This is a security image</p> 
-         <Image src="/security_PNG.png" alt='Security image' width={500} height={500}/>
-         </div>
            
          </div>
       

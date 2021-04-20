@@ -1,4 +1,5 @@
 import React from 'react';
+import {Card} from 'antd'
 import styles from '../../styles/Whyhasibu.module.scss'
 import LayoutHeader from '../../Component/LayoutHeader'
 import Books from '../../public/Books.svg'
@@ -9,7 +10,7 @@ import Footer from '@/components/Footer'
 const WhyHasibu = () => {
     return ( 
         <div>
-             <LayoutHeader />
+             {/* <LayoutHeader /> */}
          <div className={styles.root}>
            <div>
            <h1 className={styles.title}>

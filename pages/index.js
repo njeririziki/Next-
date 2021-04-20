@@ -3,7 +3,9 @@ import {Button,Grid} from 'antd'
 import {MenuUnfoldOutlined} from '@ant-design/icons'
 import Business from '../public/Business.svg'
 import Mobile from '../public/Mobile.svg'
+import Analytics from '../public/Analytics.svg'
 import styles from '@/styles/Landing.module.scss'
+import Image from 'next/image'
  //import Header from '@/Component/Header'
 // import Drawer from '../Component/Drawer'
 import LayoutHeader from '@/components/LayoutHeader'
@@ -24,9 +26,8 @@ function HomePage() {
     setChange(true)
   }
     return (
-      <div className={styles.bod}>
-        
-        <div className={styles.root} onScroll={onScroll} >
+      <>
+         <div className={styles.root} onScroll={onScroll} >
           < div className={styles.fcard}>
           <LayoutHeader split={true} home={true}/>  
          <h1 className={styles.title} >
@@ -45,43 +46,57 @@ function HomePage() {
            </Button>
            {/* <Button style={{ backgroundColor: '#2AB7CA', color:'#FFFFFF'}} size='large' shape='round'>
             Features
-           </Button> */}
+           </Button>  */}
             
           </div>
-
           <div className={styles.scard}>
-         <Carousel />
+         <Business className={styles.svg}/>
           </div>
-        
           </div>
-         
           <div className={styles.secondpage}>
-        <div className={styles.whattext} > 
-           <h2 className={styles.othertitle} style={{fontSize:"2.5em",}}>
+          <div className={styles.scard}>
+         <Analytics className={styles.svg}/>
+          </div>
+          <div className={styles.whattext}>
+         <h2 className={styles.othertitle} style={{fontSize:"2.5em"}}>
              What is Hasibu?  </h2>
            <h1 className={styles.subtitle} 
-           style={{width:'60vw', color:'#000000', marginLeft:'0px'}} >
+           style={{width:'40vw', marginLeft:'2em'}} >
            Hasibu is a business management tool. It is the complete package every
             business owner and manager is looking for.No matter where you are,
             we can make it happen
            </h1 >
-        
-         </div>
-         <div style={{display:'flex', flexDirection:'column'}}>
-         <Mobile className={styles.svg}/>
-         <div className={styles.lasttext} style={{ fontSize: '1.5em' }}>
-           
-         <h2 >
-       No matter where you are,
-          we can make it happen
-          </h2 >
+      
          </div>
         
-         </div>
-            </div>  
-            <Footer/>   
-        </div>
+        </div>  
+            
+      <Footer/>
+      </>
+   
     )
 }
 
 export default HomePage
+
+    {/* 
+          <div className={styles.scard}>
+         <Business className={styles.svg}/>
+          </div>
+        
+          </div>
+           
+         <div className={styles.whattext}>
+         <h2 className={styles.othertitle} style={{fontSize:"2.5em"}}>
+             What is Hasibu?  </h2>
+           <h1 className={styles.subtitle} 
+           style={{width:'40vw', marginLeft:'2em'}} >
+           Hasibu is a business management tool. It is the complete package every
+            business owner and manager is looking for.No matter where you are,
+            we can make it happen
+           </h1 >
+      
+         </div>
+            </div>   */}
+
+      

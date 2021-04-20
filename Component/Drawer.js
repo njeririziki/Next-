@@ -12,7 +12,8 @@ import { Menu, Button,Grid,Drawer} from 'antd';
 const {Item} = Menu
 const MenuComp=()=>{
     return(
-        <Menu >
+        <Menu  theme='dark' 
+        style={{backgroundColor:'#102027', color:'#ffffff', height:'100vh'}}>
         
             <Item key={1}>
             <Link href='/'>
@@ -45,7 +46,7 @@ const MenuComp=()=>{
 
 const PageDrawer = ({visible,onClose}) => {
     return ( 
-        <div>
+        <div  style={{backgroundColor:'#102027', color:'#ffffff'}}>
         <Drawer
         title="Hasibu"
         placement="right"
@@ -53,7 +54,7 @@ const PageDrawer = ({visible,onClose}) => {
         onClose={onClose}
         visible={visible}
         width='250'
-        style={{backgroundColor:'#263238', color:'#ffffff'}}
+       
       >
        <MenuComp/>
       </Drawer>

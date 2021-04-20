@@ -1,18 +1,20 @@
 .bod{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;  
 }
 .root{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+  
     
 }
 
 .fcard{
     display: flex;
     width: 50vw;
-    height: inherit;
+    height: 100vh;
     flex-direction: column;
     //margin-top: 2em;
     background-color: var(--white);  
@@ -60,6 +62,8 @@
 }
 .headername{
     align-self: start;
+    font-weight: 600;
+    font-family: Amiko, sans-serif;
 }
 .breakingword{
   display: flex;
@@ -67,10 +71,13 @@
   color: #000000; 
 }
 .flinks{
+    font-family: Amiko, sans-serif;
+    font-weight: 600;
     color: #000000;  
 }
 .shalfword{
-    
+    font-family: Amiko, sans-serif;
+    font-weight: 600;
     color: #FFFFFF;
     &:hover{
         color: var(--secondary);
@@ -104,15 +111,18 @@
    width: 400px;
 }
 .svg{
-    width: 50vw;
-    height: 65%;   
+    align-self: center;
+    width: 40vw;
+    height: 65%;  
+    margin-top: 0%; 
 }
 .othersvgs{
-    align-self: center;
-    margin-top: 40px;
-    margin-right: 40px;
-    width: 600px;
-    height: 500px;
+   // align-self: center;
+  margin-top: 40px;
+   // margin-right: 40px;
+   align-self: center;
+   width: 45vw;
+    height: 60%;
 }
 .title{
     margin: 1em 0em 0em 2em;  
@@ -128,16 +138,30 @@
 }
 .secondpage{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     height:auto;
-    background-color: #f8f8f8;
-    padding-bottom: 10em;
-    padding-top: 3em;
+    width:100vw
+    // background-color: #f8f8f8;
+    // padding-bottom: 10em;
+    // padding-top: 3em;
 }
 .whattext{
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ align-Items: center;
+
+}
+.othertitle{
+    color:#070404;
+    font-size: 2.5em;
+    font-family: Amiko, sans-serif;
+    font-weight: 600;
+}
+.othersubtitle{
+    color:#000000;
+    font-size: 1.5em;  
+    font-family:'Segoe UI', sans-serif;  
 }
 
 @media (max-width: 1055px) {
@@ -154,8 +178,8 @@
         margin: 2em 0em 0em  3em;
     }
     .svg{
-        align-self: start;
-        width: 60vw;
+        align-self: center;
+        width: 45vw;
         height: 55%;     
     }
     .othersvgs{
@@ -184,22 +208,12 @@
         width: 400px;
         height: 300px;
     }
-    .secondpage{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height:auto;
-        background-color: #f8f8f8;
-        padding-bottom: 3em;
-        padding-top: 3em;
-    }
-
-    
+  
+   
 }
 @media (max-width: 600px) {
     .bod{
-        width:fit-content
+        width:max-content
     }
     .root{
         flex-direction: column;
@@ -207,16 +221,15 @@
          
     }
     .fcard{
-         width:fit-content;
+         width:100%;
         height: auto;
         margin-top: 1em;
         background-color:var(--black);
         padding: 1em 0em 1.5em 1.5em;
     }
     .scard{
-        width: 100vw;
+        width: 100%;
         height: 100%; 
-
     }
     .header{
         justify-content: space-between;
@@ -258,7 +271,6 @@
         width: 75vw;
         height: 60%;     
     }
-   
     .othersvgs{
         align-self: center;
         margin-top: 0px;
@@ -266,11 +278,7 @@
         width: 450px;
         height: 400px;  
     }
-    .secondpage{
-        display: flex;
-        flex-direction: column;
-        
-    }
+
     .secondfcard{
         width:100vw;
         height: auto;
@@ -280,23 +288,73 @@
     .secondpage{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100vw;
         height:auto;
         background-color: #f8f8f8;
-        padding-bottom: 3em;
-       
+          
     }
     .whattext{
-        margin-top: 5em;
+        background-color:#000000;
+        width:100%;
     }
     .lasttext{
         margin-top: 10px; 
         margin-left:0px;
         align-self:flex-end;
         width: 80vw;
-        color:#000000;
+        
         
     }
 
+}
+@media (max-width: 400px) {
+    .bod{
+        width:100%;
+        background-color: var(--black);
+        height: 100%;
+    }
+    .root{
+        flex-direction: column;
+        background-color: var(--black);
+         width:100vw
+    }
+    .title{
+        margin: 0em 0em 0em 0em;    
+       align-self: center;
+       font-size: 2em;
+       color: #FFFFFF;
+       }
+
+       .subtitle{
+           margin: 0em 0em 0em  0em;
+           font-weight: 300;
+           font-size: 1.5em;
+           align-self: center;
+           color: #FFFFFF;
+       }
+       .button{  
+        margin: 1em 0em 1.5em  0em;
+        align-self: center;
+    }
+    .headername{
+        font-size: 3.5em;
+        color: #FFFFFF;
+    }
+    .blackicon{
+        font-size: 1.5em;
+        color: #000000;
+    }
+    .svg{
+        align-self: center;
+        width: 75vw;
+        height: 50%;     
+    }
+    .othersvgs{
+        align-self: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 200;
+        height: 260px;  
+   
+}
 }

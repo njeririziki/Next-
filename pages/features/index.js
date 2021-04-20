@@ -48,7 +48,7 @@ const Features = () => {
              </div>
              <div className={styles.spage}>
                 <div style={{margin: '50px 0px 50px 0px'}}>
-                <h1 style={{fontSize:'3em'}} >
+                <h1 style={{fontSize:'3em',color:'#ffffff'}} >
               We provide the solution <br/> not just the service
                 </h1> 
                 </div>

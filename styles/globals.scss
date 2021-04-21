@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sumana:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Lateef&display=swap');
 
+
+
+.primary-font {
+  font-family: Aleo, serif;
+}
+
+.secondary-font {
+  font-family: Sumana, serif;
+}
 html,
 body {
   padding: 0;

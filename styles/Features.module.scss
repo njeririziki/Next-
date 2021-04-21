@@ -1,3 +1,11 @@
+$imagedir: '../public';
+
+@mixin background-image($img, $background-position) {
+ background-image: url('#{$imagedir}/#{$img}');
+ background-repeat: no-repeat;
+ background-position: $background-position;
+ background-size: contain;
+}
  .root{
     display: flex;
     flex-direction: column;
@@ -9,10 +17,11 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    @include background-image('chess2.png',right bottom)
    }
    .grid{
      //  margin-top:100px;
-       width: 80vh;
+       width: 80vw;
        height: 80vh;
       
    }
@@ -31,12 +40,41 @@
     padding: 1em 0em 4em 0em;
    
    }
+   .grid{
+    width: 80vw;
+    height: auto;
+}
+.svg{
+    width: 100vw;
+}
  
 @media (max-width: 600px) {
     .fpage{
         margin-top: 50px ; 
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         height: auto;
     }
+    .spage{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        background-color: var(--black);
+        // background-color: #f8f8f8;
+        padding: 1em 0em 4em 0em;
+       
+       }
+  
+      .title{
+          padding-left: 0em;
+          width: 100vw;
+      }
+      .grid{
+          width: 100vw;
+          height: auto;
+      }
 }

@@ -6,9 +6,7 @@
 }
 .root{
     display: flex;
-    flex-direction: row;
-  
-    
+    flex-direction: row;   
 }
 
 .fcard{
@@ -61,9 +59,9 @@
     justify-content: space-around;  
 }
 .headername{
-    align-self: start;
+    align-self: flex-start;
     font-weight: 600;
-    font-family: Amiko, sans-serif;
+   // font-family: Amiko, sans-serif;
 }
 .breakingword{
   display: flex;
@@ -71,12 +69,12 @@
   color: #000000; 
 }
 .flinks{
-    font-family: Amiko, sans-serif;
+    //font-family: Amiko, sans-serif;
     font-weight: 600;
     color: #000000;  
 }
 .shalfword{
-    font-family: Amiko, sans-serif;
+   // font-family: Amiko, sans-serif;
     font-weight: 600;
     color: #FFFFFF;
     &:hover{
@@ -127,14 +125,15 @@
 .title{
     margin: 1em 0em 0em 2em;  
     font-size: 4em;
-    font-family: Amiko, sans-serif;
-    font-weight: 700;
+    //font-family: 'ALeo',serif;
+    font-weight:  700;
 }
 .subtitle{
     margin: 1em 0em 0em  4em;
     font-weight: 300;
     font-size: 2em;
-    font-family:'Segoe UI', sans-serif;
+    //font-family:'Amiko', sans-serif;
+    
 }
 .secondpage{
     display: flex;
@@ -155,13 +154,14 @@
 .othertitle{
     color:#070404;
     font-size: 2.5em;
-    font-family: Amiko, sans-serif;
+   // font-family: Amiko, sans-serif;
     font-weight: 600;
 }
 .othersubtitle{
     color:#000000;
     font-size: 1.5em;  
-    font-family:'Segoe UI', sans-serif;  
+  //  font-family:'Segoe UI', sans-serif; 
+ 
 }
 
 @media (max-width: 1055px) {
@@ -183,7 +183,7 @@
         height: 55%;     
     }
     .othersvgs{
-        align-self: start;
+        align-self: flex-start;
         margin-top: 0px;
         margin-right: 0px;
         width: 400px;
@@ -213,7 +213,7 @@
 }
 @media (max-width: 600px) {
     .bod{
-        width:max-content
+        width:max-content 
     }
     .root{
         flex-direction: column;

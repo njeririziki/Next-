@@ -34,31 +34,34 @@ const Features = () => {
 
     return ( 
        <div className={styles.root}>
-          <LayoutHeader/>
+          {/* <LayoutHeader/> */}
 
-             <div className={styles.fpage}>
+              <div className={styles.fpage}>
                 <div className={styles.title}>
                 <h1 style={{fontSize:'3.5em'}} > Our features </h1>
                 <p style={{fontSize:'2em'}}> We provide a variety of features essential to your business.
                 All our packages include full tech support round the clock, anywhere anytime  </p>
+                </div>            
+                <Analytics  className={styles.grid} />
                 </div> 
-          
-            <Analytics  className={styles.grid} />
              
-             </div>
-             <div className={styles.spage}>
+            
+                <div className={styles.spage}>
                 <div style={{margin: '50px 0px 50px 0px'}}>
                 <h1 style={{fontSize:'3em',color:'#ffffff'}} >
-              We provide the solution <br/> not just the service
+                We provide the solution <br/> not just the service
                 </h1> 
                 </div>
-                
-             <GridList  data={items}  
-             />
+              <div className={styles.grid}>
+              <GridList  data={items} />   
+               </div>  
+          
+            
              <div>
-             </div>
+             </div> 
+              </div>  
            
-             </div>
+            
      
          
        <Footer/>

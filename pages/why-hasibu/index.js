@@ -12,7 +12,7 @@ const WhyHasibu = () => {
         <div>
              {/* <LayoutHeader /> */}
          <div className={styles.root}>
-           <div>
+           <div className={styles.titlediv}>
            <h1 className={styles.title}>
                 why hasibu?
             </h1>
@@ -20,20 +20,20 @@ const WhyHasibu = () => {
          It's the best platform for your business. It is just that simple.
             </h1>
            </div>
-            <Books className={styles.svg} />
+            {/* <Books className={styles.svg} /> */}
         </div>
-        <div className={styles.textdiv} >
+        {/* <div className={styles.textdiv} >
             <h1 className={styles.othertitle} >
               Freedom from physical presence
             </h1>
             <h1 className={styles.othersubtitles}>
            In times like this (pandemic) its just makes more sense to work from home. 
             </h1> 
-         </div>
+         </div> */}
         <div className={styles.nextpage}>
         <Cloud className={styles.othersvg}/>
-            <div style={{margin:'0px 0px 0px 50px',width: '35vw'}}>
-            <h1 className={styles.othertitle}>
+            <div >
+            <h1 className={styles.othertitles}>
              Data Analytics
             </h1>
             <h1 className={styles.othersubtitles}>

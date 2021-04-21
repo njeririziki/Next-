@@ -20,6 +20,11 @@ const MenuComp=()=>{
               <a> Home</a>  
             </Link>
             </Item>
+            <Item key={5}>
+            <Link href='/why-hasibu'>
+              <a> Why Jasibu</a>  
+            </Link>
+            </Item>
             <Item key={2}>
             <Link href='/about'>
               <a> About us</a>  

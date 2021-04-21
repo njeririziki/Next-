@@ -7,7 +7,7 @@ import {MenuUnfoldOutlined} from '@ant-design/icons'
 // import Man from '../../public/man_lift.svg'
 // import Girl from '../../public/girl_laptop.svg'
 import Digital from '../../public/Digital_marketing.svg'
-import styles from '@/styles/Landing.module.scss'
+import styles from '@/styles/About.module.scss'
 import LayoutHeader from '@/components/LayoutHeader'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
@@ -55,11 +55,10 @@ function AboutPage() {
            </Button> */}
         
           </div>
-         <div style={{backgroundColor:'#ffffff'}} className={styles.scard}>
+          <Digital  className={styles.svg} />
          <div >
-            <Digital  className={styles.svg} 
-            style={{height:'700px'}} />
-          </div> 
+           
+         
          </div>
        
            

@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#102027;
+     padding:2em 2em 2em 2em;
+     color:#ffffff;
+     font-size: 1.2em;
+}
+
+ .itemsdiv{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; 
+   
+ }
+@media (max-width: 425px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f4ed;
+        color: #102027;
+        font-size: 1em;
+    } 
+}

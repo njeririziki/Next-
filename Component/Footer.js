@@ -61,7 +61,7 @@ const FooterComp = () => {
             {Overview}
             {Contacts}
             {Socials} 
-            @creareafrica
+           
             </div>) }
         
         </>

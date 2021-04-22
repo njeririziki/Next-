@@ -33,11 +33,12 @@ function HomePage() {
          <h1 className={styles.title} >
          Simple. Reliable. Straight forward.
          </h1>
+          {screen.xs? <p>Small</p>:
            <h1 className={styles.subtitle}  >
-                You can run your business  at your own convenience.
-                From the comfort of your home. 
-                 Let us show you how ... 
-           </h1 >
+            You can run your business  at your own convenience.
+            From the comfort of your home. 
+             Let us show you how ... 
+           </h1 >}
           
            <Button className={styles.button} size='large' shape='round'>
            <a
@@ -54,21 +55,24 @@ function HomePage() {
           </div>
           </div>
           <div className={styles.secondpage}>
+         {screen.xs? '':
           <div className={styles.scard}>
-         <Analytics className={styles.svg}/>
-          </div>
+          <Analytics className={styles.svg}/>
+           </div>}
           <div className={styles.whattext}>
-         <h2 className={styles.othertitle} style={{fontSize:"2.5em"}}>
+         <h2 className={styles.othertitle} >
              What is Hasibu?  </h2>
-           <h1 className={styles.subtitle} 
-           style={{width:'40vw', marginLeft:'2em'}} >
+           <p className={styles.othersubtitle}  >
            Hasibu is a business management tool. It is the complete package every
             business owner and manager is looking for.No matter where you are,
             we can make it happen
-           </h1 >
+           </p >
       
          </div>
-        
+         {screen.xs?
+          <div className={styles.scard}>
+          <Analytics className={styles.svg}/>
+           </div>:''}
         </div>  
             
       <Footer/>

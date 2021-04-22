@@ -10,14 +10,14 @@ import Footer from '@/components/Footer'
 const WhyHasibu = () => {
     return ( 
         <div>
-             {/* <LayoutHeader /> */}
+              <LayoutHeader /> 
          <div className={styles.root}>
            <div className={styles.titlediv}>
            <h1 className={styles.title}>
                 why hasibu?
             </h1>
             <h1 className={styles.subtitle}>
-         It's the best platform for your business. It is just that simple.
+         
             </h1>
            </div>
             {/* <Books className={styles.svg} /> */}
@@ -31,15 +31,19 @@ const WhyHasibu = () => {
             </h1> 
          </div> */}
         <div className={styles.nextpage}>
-        <Cloud className={styles.othersvg}/>
+            <div className={styles.svgcontainer} >
+            <Cloud  className={styles.othersvg}/>
             <div >
             <h1 className={styles.othertitles}>
              Data Analytics
             </h1>
             <h1 className={styles.othersubtitles}>
-            get all the data you need to imporve your business compiled and presented amazaingly
+            get all the data you need to imporve your <br/>business compiled and presented amazaingly
             </h1> 
             </div>
+            </div>
+       
+            
            
         </div>
         <Footer/>

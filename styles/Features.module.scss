@@ -1,10 +1,11 @@
 $imagedir: '../public';
 
-@mixin background-image($img, $background-position) {
+@mixin background-image($img,$background-color, $background-position) {
  background-image: url('#{$imagedir}/#{$img}');
  background-repeat: no-repeat;
  background-position: $background-position;
- background-size: contain;
+ background-size:cover;
+ background-color: $background-color;
 }
  .root{
     display: flex;
@@ -15,9 +16,8 @@ $imagedir: '../public';
     display: flex;
     flex-direction: row;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    @include background-image('chess2.png',right bottom)
+    justify-content: flex-end;
+    @include background-image('features.jpg',#ffffff,left )
    }
    .grid{
      //  margin-top:100px;
@@ -26,7 +26,7 @@ $imagedir: '../public';
       
    }
    .title{
-       padding-left: 7em;
+      align-self: center;
        width: 55vw;
    }
    .spage{
@@ -35,8 +35,8 @@ $imagedir: '../public';
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color: var(--black);
-    // background-color: #f8f8f8;
+   // background-color: var(--black);
+     background-color: #f6f7d7;
     padding: 1em 0em 4em 0em;
    
    }
@@ -47,15 +47,19 @@ $imagedir: '../public';
 .svg{
     width: 100vw;
 }
+.intro{
+    padding: 1em;
+    font-size: 3em;
+   }
  
 @media (max-width: 600px) {
     .fpage{
-        margin-top: 50px ; 
+        
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        height: auto;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100vh;
     }
     .spage{
         display: flex;
@@ -63,8 +67,6 @@ $imagedir: '../public';
         justify-content: flex-start;
         align-items: flex-start;
         height: auto;
-        background-color: var(--black);
-        // background-color: #f8f8f8;
         padding: 1em 0em 4em 0em;
        
        }
@@ -77,4 +79,8 @@ $imagedir: '../public';
           width: 100vw;
           height: auto;
       }
+      .intro{
+        padding: 1em;
+        font-size: 2em;
+       }
 }

@@ -4,23 +4,27 @@ $imagedir: '../public';
  background-image: url('#{$imagedir}/#{$img}');
  background-repeat: no-repeat;
  background-position: $background-position;
+ background-size:cover;
+ //background-color: $background-color;
  //background-size: 100% 100%;
 }
 .root{
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   width:100vw;
   height: 100vh;
  @include background-image('chess1.jpg',right bottom)
 }
 .titlediv{
-    margin-left: 3em;
+    margin-left: 4em;  
+    align-self: center;
 }
 .title{
-    font-size: 4em;
+    font-size: 6em;
     color:var(--white);
-    font-family: Aleo, serif;
-    font-weight: 700;
+   
+    font-weight: 400;
 }
 .subtitle{
     width: 40vw;
@@ -60,14 +64,28 @@ $imagedir: '../public';
 
 .othertitles{
     margin: 1em 1em 1em 1em;
-    font-size: 3em;
+    font-size: 2em;
      margin-left: 2em;
     // color: #ffffff;
 }
 .othersubtitles{
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 350;
+    margin-left: 2em;
     //color: #ffffff;
+}
+.svgcontainer{
+    width: max-content;
+    height: 50%;
+    box-shadow: 10px 10px 10px #ececec;
+    border-radius: 15px;
+    background: #ffffff;
+    border-top: 1px solid #e9e7e7;
+    border-left: 1px solid #dad7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
 .othersvg{
     margin-top: 0px;
@@ -75,6 +93,15 @@ $imagedir: '../public';
     height: auto; 
 }
 @media (max-width: 768px) {
+    .root{
+        justify-content: flex-start;
+           @include background-image('chess1.jpg', right bottom )
+         }
+       .titlediv{
+           margin-left: 0px;
+        
+         height: inherit;
+       }
     .subtitle{
         margin-left: 1em;
         width: auto;
@@ -82,7 +109,57 @@ $imagedir: '../public';
         font-size: 1.8em; 
         color: var(--white);  
     }
+    
 }
+@media (max-width: 768px) {
+    .root{
+        justify-content: flex-start;
+           @include background-image('chess1.jpg', right bottom )
+         }
+       .titlediv{
+           margin-left: 0px;
+         
+       }
+       
+       .title{
+           margin: 2em 1em 0em 1em;
+           font-size: 6em;
+           font-weight: 600;
+           color: var(--white);
+           font-family: 'Barlow', sans-serif;
+       }
+            .othertitles{
+            margin: 1em 1em 1em 1em;
+            font-size: 2em;
+            margin-left: 2em;
+            // color: #ffffff;
+        }
+        .othersubtitles{
+            font-size: 1.2em;
+            font-weight: 350;
+            margin-left: 2em;
+            //color: #ffffff;
+        }
+        .othersvg{
+            margin-top: 0px;
+            width: 40vw;
+            height: auto; 
+        }
+        .svgcontainer{
+            width: max-content;
+            height: 70%;
+            box-shadow: 10px 10px 10px #ececec;
+            border-radius: 15px;
+            background: #ffffff;
+            border-top: 1px solid #e9e7e7;
+            border-left: 1px solid #dad7d7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+        }
+    }
+
 
 @media (max-width: 425px) {
     .root{
@@ -99,9 +176,10 @@ $imagedir: '../public';
         margin-left: 0px;
     }
     .title{
-        margin: 1em 1em 0em 1em;
-        font-size: 2.5em;
+        margin: 2em 0em 0em 0em;
+        font-size: 3.8em;
         color: var(--white);
+        font-family: 'Barlow', sans-serif;
     }
     .subtitle{
         margin-left: 1em;
@@ -123,7 +201,7 @@ $imagedir: '../public';
         
         display: flex;
         flex-direction: column;
-        margin: 0em 0em 0em 0em;
+        padding: 0em 1em 0em 1em;
         justify-self: flex-start;
         align-items: flex-start;
     }
@@ -136,7 +214,7 @@ $imagedir: '../public';
     }
     .othersvg{
         margin-top: 0px;
-        width: 70vw;
+        width: 60vw;
         height: auto; 
     }
     .othertitles{
@@ -149,5 +227,20 @@ $imagedir: '../public';
         font-size: 1.5em;
         font-weight: 300;
         //color: #ffffff;
+    }
+    .svgcontainer{
+        width: auto;
+        //width: 80vh;
+        height: auto;
+        box-shadow: 10px 10px 10px #ececec;
+        border-radius: 15px;
+        background: #ffffff;
+        border-top: 1px solid #e9e7e7;
+        border-left: 1px solid #dad7d7;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0em;
     }
 }

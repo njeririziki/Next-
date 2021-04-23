@@ -14,23 +14,23 @@ $imagedir: '../public';
   justify-content: flex-start;
   width:100vw;
   height: 100vh;
- @include background-image('chess1.jpg',right bottom)
+ @include background-image('chess-transparent.png',right bottom)
 }
 .titlediv{
-    margin-left: 4em;  
+    margin-left: 6em;  
     align-self: center;
 }
 .title{
-    font-size: 6em;
-    color:var(--white);
+    font-size: 3em;
+    color:var(--black);
    
     font-weight: 400;
 }
 .subtitle{
     width: 40vw;
-    font-weight: 350;
-    font-size: 2.5em; 
-    color:var(--white);
+    font-weight: 600;
+    font-size: 4.5em; 
+    color:var(--black);
     margin-right: 1em ; 
 }
 // .pageheader{
@@ -44,11 +44,12 @@ $imagedir: '../public';
 }
 .nextpage{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:100vw;
-    height: 100vh;
+    height: auto;
+    padding: 2em;
     background-color: #f5f5f5;
 }
 .textdiv{
@@ -85,6 +86,7 @@ $imagedir: '../public';
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2em;
     padding: 2em;
 }
 .othersvg{
@@ -99,16 +101,13 @@ $imagedir: '../public';
          }
        .titlediv{
            margin-left: 0px;
-        
-         height: inherit;
+         height: inherit; 
        }
-    .subtitle{
-        margin-left: 1em;
-        width: auto;
-        font-weight: 300;
-        font-size: 1.8em; 
-        color: var(--white);  
-    }
+       .title{
+        font-size: 1.2em; 
+        color:var(--black);
+       }
+ 
     
 }
 @media (max-width: 768px) {
@@ -122,10 +121,10 @@ $imagedir: '../public';
        }
        
        .title{
-           margin: 2em 1em 0em 1em;
-           font-size: 6em;
+           margin: 5em 1em 0em 1em;
+           font-size: 2.5em;
            font-weight: 600;
-           color: var(--white);
+           color:var(--black);
            font-family: 'Barlow', sans-serif;
        }
             .othertitles{
@@ -145,6 +144,13 @@ $imagedir: '../public';
             width: 40vw;
             height: auto; 
         }
+           .subtitle{
+        margin-left: 1em;
+        width: auto;
+        font-weight: 600;
+        font-size: 3.5em; 
+        color:var(--white);  
+    }
         .svgcontainer{
             width: max-content;
             height: 70%;
@@ -158,6 +164,7 @@ $imagedir: '../public';
             align-items: center;
             padding: 2em;
         }
+      
     }
 
 
@@ -165,48 +172,52 @@ $imagedir: '../public';
     .root{
         display: flex;
         flex-direction: column;
-        @include background-image('chess1.jpg', right )
+        height: 100vh;
+        @include background-image('chess-transparent.png', right bottom )
       }
     .svg{
         margin-top: 50px;
         width: 400px;
         height: auto;   
+        padding-left: 1em;
     }
     .titlediv{
         margin-left: 0px;
+        margin-bottom: 2em;
     }
     .title{
-        margin: 2em 0em 0em 0em;
-        font-size: 3.8em;
-        color: var(--white);
+        margin: 0em 0em 0em 2em;
+        font-size: 1.8em;
+        color: var(--black);
         font-family: 'Barlow', sans-serif;
+        font-weight: 300;
     }
     .subtitle{
         margin-left: 1em;
         width: auto;
-        font-weight: 350;
-        font-size: 1.5em; 
-        color: var(--white);  
+        font-weight: 600;
+        font-size: 3.5em; 
+        color: var(--black); 
+        font-family: 'Barlow Condensed', sans-serif; 
     }
     .othertitles{
         margin: 1em 1em 1em 1em;
-        font-size: 3em; 
+        font-size: 1.8em; 
     }
     .othersubtitles{
         margin-left: 1em;
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: 350;    
     }
     .nextpage{
-        
+        height: auto;
         display: flex;
         flex-direction: column;
-        padding: 0em 1em 0em 1em;
+        padding: 2em 1em 2em 1em;
         justify-self: flex-start;
         align-items: flex-start;
     }
-    .textdiv{
-       
+    .textdiv{  
         align-self: flex-start;
     }
     .nextpagediv{
@@ -217,20 +228,9 @@ $imagedir: '../public';
         width: 60vw;
         height: auto; 
     }
-    .othertitles{
-        margin: 0em 0em 0em 0em;
-        font-size: 2em;
-         margin-left: 0em;
-        // color: #ffffff;
-    }
-    .othersubtitles{
-        font-size: 1.5em;
-        font-weight: 300;
-        //color: #ffffff;
-    }
+
     .svgcontainer{
         width: auto;
-        //width: 80vh;
         height: auto;
         box-shadow: 10px 10px 10px #ececec;
         border-radius: 15px;

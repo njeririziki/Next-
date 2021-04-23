@@ -17,7 +17,7 @@ const WhyHasibu = () => {
                 why hasibu?
             </h1>
             <h1 className={styles.subtitle}>
-         
+            The technology speaks for itself
             </h1>
            </div>
             {/* <Books className={styles.svg} /> */}
@@ -42,9 +42,17 @@ const WhyHasibu = () => {
             </h1> 
             </div>
             </div>
-       
-            
-           
+            <div className={styles.svgcontainer} >
+            <Cloud  className={styles.othersvg}/>
+            <div >
+            <h1 className={styles.othertitles}>
+             Data Analytics
+            </h1>
+            <h1 className={styles.othersubtitles}>
+            get all the data you need to imporve your <br/>business compiled and presented amazaingly
+            </h1> 
+            </div>   
+        </div>
         </div>
         <Footer/>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import Grid from '@/components/Cards/Grid'
+//import Grid from '@/components/Cards/Grid'
+import {Grid} from 'antd'
 import {BuildFilled, RadarChartOutlined, RiseOutlined,SlidersOutlined} from '@ant-design/icons'
 import GridList from '@/components/Cards/GridList'
 import LayoutHeader from '../../Component/LayoutHeader'
@@ -12,25 +13,26 @@ import Analytics from '../../public/Analytics.svg'
 const items=[
    {key:1,
      
-       obj: 'We create clean, beautiful and engaging websites that meet your business objectives. Not only do they look and work great, they are also built with marketing in mind. And for our clients, that makes all the difference in the world.', 
+       obj: 'We create clean, beautiful and engaging websites that meet your business objectives.', 
    title:'Analytics',
    icon:<BuildFilled/>  },
    {key:2,
-       obj:'We develop websites using both open-source and custom framework solutions to deliver the most polished and user-friendly product possible. All of our solutions also come with a lifetime bug-free code guarantee.', 
+       obj:'We develop websites using both open-source and custom framework solutions ', 
    title:'Performance Review',
   icon:<RadarChartOutlined/>},
    {key:3,
-       obj: "We use scientific-driven practices to rank you on first page of Google and get your brand in front of customers. Our growth strategies focus on increasing traffic with various methods for increasing website authority and position.",
+       obj: "We use scientific-driven practices to rank you on first page of Google ",
         title:'Finacial Management',
       icon:<RiseOutlined/> },
    {key:4,
-     obj: "We use scientific-driven practices to rank you on first page of Google and get your brand in front of customers. Our growth strategies focus on increasing traffic with various methods for increasing website authority and position.",
+     obj: "We use scientific-driven practices to rank you on first page of Google and get your brand in front. ",
      title:'POS',
     icon:<SlidersOutlined/>}
 ]
 
 
 const Features = () => {
+  const screen = Grid.useBreakpoint()
 
     return ( 
        <div className={styles.root}>
@@ -39,8 +41,10 @@ const Features = () => {
               <div className={styles.fpage}>
                 <div className={styles.title}>
                 <h1 > Our Services </h1>
-                <p className={styles.subtitle}> We provide a variety of features essential to your business.
-                All our packages include full tech support round the clock, anywhere anytime  </p>
+               {screen.xs? ''
+               : <p className={styles.subtitle}> We provide a variety of features essential to your business.
+               All our packages include full tech support round the clock, anywhere anytime  </p>
+               } 
                        
                             </div> 
                 </div> 

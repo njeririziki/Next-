@@ -34,23 +34,22 @@ const Features = () => {
 
     return ( 
        <div className={styles.root}>
-          {/* <LayoutHeader/> */}
+           <LayoutHeader/> 
 
               <div className={styles.fpage}>
                 <div className={styles.title}>
-                <h1 style={{fontSize:'3.5em'}} > Our features </h1>
-                {/* <p style={{fontSize:'2em'}}> We provide a variety of features essential to your business.
+                <h1 > Our Services </h1>
+                <p className={styles.subtitle}> We provide a variety of features essential to your business.
                 All our packages include full tech support round the clock, anywhere anytime  </p>
-                        */}
+                       
                             </div> 
                 </div> 
              
-            
                 <div className={styles.spage}>
                 <div className={styles.intro}>
                 <p >
-                We provide the solution <br/> not just the service
-                </p> 
+                We provide the solution  not just the service
+            </p>
                 </div>
               <div className={styles.grid}>
               <GridList  data={items} />   

@@ -14,6 +14,7 @@
     width: 50vw;
     height: 100vh;
     flex-direction: column;
+    justify-content: center;
     //margin-top: 2em;
     background-color: var(--white);  
 }
@@ -165,6 +166,12 @@
     margin: 1em 1em 1em 2em; 
   // font-family:'Segoe UI', sans-serif; 
  
+}
+.form{
+    width: 40vw;
+    height: 100vh;
+    padding: 2em 1em 0em 3em;
+    align-self: center;
 }
 
 @media (max-width: 1055px) {
@@ -323,6 +330,15 @@
         font-size: 1.7em; 
         font-weight: 300;
         margin: 1em 1em 1em 2em; 
+    }
+    .form{
+        width: inherit;
+        height: 80vh;
+        padding: 1em ;
+        margin-left: 0px;
+        align-self: center;
+        color:'#ffffff';
+        background-color: #f8f8f8;
     }
 }
 @media (max-width: 400px) {

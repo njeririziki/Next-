@@ -21,16 +21,16 @@ const HeaderComp=({split,whypg})=>{
             <Link href='/'>
             <h1>Hasibu</h1>    
             </Link>
-           <div className={styles.logo} >
+           {/* <div className={styles.logo} >
             <Logo style={{width:'auto', height:'100%'}}/>  
-            </div>
+            </div> */}
           
     <div className={styles.breadcrumbs} >
         <Link href='/why-hasibu'>
         <a className={styles.flinks}>Why Hasibu? </a>
         </Link>
        <Link href='/about'>
-       <a className={styles.flinks}> About Us </a>
+       <a className={styles.flinks}> About </a>
        </Link>
        <Link href='/features'>
        <a className={split? styles.shalfword:styles.flinks}>Features</a>

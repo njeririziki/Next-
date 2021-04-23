@@ -1,10 +1,10 @@
 $imagedir: '../public';
 
-@mixin background-image($img,$background-color, $background-position) {
+@mixin background-image($img,$background-color,$background-size, $background-position) {
  background-image: url('#{$imagedir}/#{$img}');
  background-repeat: no-repeat;
  background-position: $background-position;
- background-size:cover;
+ background-size: $background-size;
  background-color: $background-color;
 }
  .root{
@@ -17,7 +17,7 @@ $imagedir: '../public';
     flex-direction: row;
     height: 100vh;
     justify-content: flex-end;
-    @include background-image('features.jpg',#ffffff,left )
+    @include background-image('featuresTransparent.png',#810000,contain,left )
    }
    .grid{
      //  margin-top:100px;
@@ -27,20 +27,31 @@ $imagedir: '../public';
    }
    .title{
       align-self: center;
-       width: 55vw;
+      font-size: 2.5em;
+      font-weight: 600;
+      color: #c4c3c3;
+
+   }
+   .subtitle{
+    align-self: center;
+    font-size: 1em;
+    font-weight: 300; 
+    padding-right: 2em;
+    width: 65vw;
    }
    .spage{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+   
     height: auto;
    // background-color: var(--black);
-     background-color: #f6f7d7;
+     background-color: #eeebdd;
     padding: 1em 0em 4em 0em;
    
    }
    .grid{
+       align-self:center ;
     width: 80vw;
     height: auto;
 }
@@ -48,8 +59,15 @@ $imagedir: '../public';
     width: 100vw;
 }
 .intro{
+    align-self: center;
     padding: 1em;
     font-size: 3em;
+    font-weight: 600;
+   
+   }
+   .introsubtitle{
+    font-size: 1em;
+    font-weight: 300;
    }
  
 @media (max-width: 600px) {
@@ -60,6 +78,7 @@ $imagedir: '../public';
         justify-content: flex-end;
         align-items: flex-end;
         height: 100vh;
+        @include background-image('featuresTransparent.png',#810000,cover,left )
     }
     .spage{
         display: flex;
@@ -72,8 +91,7 @@ $imagedir: '../public';
        }
   
       .title{
-          padding-left: 0em;
-          width: 100vw;
+       font-size: 2em;
       }
       .grid{
           width: 100vw;

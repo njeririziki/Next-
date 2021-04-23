@@ -21,7 +21,7 @@ const HeaderComp=({split,whypg})=>{
             <Logo style={{width:'40px', height:'40px'}}/>  </div> */}
           
     <div className={styles.breadcrumbs}>
-        <Link href='/whyhasibu'>
+        <Link href='/why-hasibu'>
         <a className={styles.flinks}>Why Hasibu? </a>
         </Link>
        <Link href='/about'>

@@ -11,7 +11,7 @@ const GridCards = ({data}) => {
           xl: 2,
           xxl: 2,}}
         dataSource={data}
-        style={{padding:'1em'}}
+        style={{padding:'1.2em'}}
         renderItem={total=> (
           <List.Item key={total.key}
           style={{ fontSize:'1.5em'}}>

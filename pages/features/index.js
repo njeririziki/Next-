@@ -7,26 +7,33 @@ import LayoutHeader from '../../Component/LayoutHeader'
 import Analytics from '../../public/Analytics.svg'
  import Business from '../../public/Business.svg'
  import Investment from '../../public/Investment.svg'
+ import Security from '../../public/security.svg'
  import styles from '@/styles/Features.module.scss'
  import Footer from '@/components/Footer'
+
+
 
 const items=[
    {key:1,
      
        obj: 'We create clean, beautiful and engaging websites that meet your business objectives.', 
    title:'Analytics',
+   cover: <Analytics /> ,
    icon:<BuildFilled/>  },
    {key:2,
        obj:'We develop websites using both open-source and custom framework solutions ', 
    title:'Performance Review',
+   cover: <Business/>,
   icon:<RadarChartOutlined/>},
    {key:3,
        obj: "We use scientific-driven practices to rank you on first page of Google ",
         title:'Finacial Management',
+        cover: <Security/>,
       icon:<RiseOutlined/> },
    {key:4,
      obj: "We use scientific-driven practices to rank you on first page of Google and get your brand in front. ",
      title:'POS',
+     cover: <Security/>,
     icon:<SlidersOutlined/>}
 ]
 
@@ -39,8 +46,8 @@ const Features = () => {
            <LayoutHeader/> 
 
               <div className={styles.fpage}>
-                <div className={styles.title}>
-                <h1 > Our Services </h1>
+                <div className={styles.titlediv}>
+                <h1 className={styles.title}> Our Services </h1>
                {screen.xs? ''
                : <p className={styles.subtitle}> We provide a variety of features essential to your business.
                All our packages include full tech support round the clock, anywhere anytime  </p>

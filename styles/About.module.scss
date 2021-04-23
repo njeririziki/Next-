@@ -1,6 +1,7 @@
 .root{
     display: flex;
-    flex-direction: row;   
+    flex-direction: row; 
+     background-color: #f0f5f9;
 }
 
 .fcard{
@@ -8,8 +9,9 @@
     width: 50vw;
     height: 100vh;
     flex-direction: column;
+    justify-content:space-around;
     //margin-top: 2em;
-    background-color: var(--white);  
+    //background-color: var(--white);  
 }
 .scard{ 
     display: flex;
@@ -22,11 +24,11 @@
 .svg{
     align-self: center;
     width: 40vw;
-    height: 65%;  
-    margin-top: 0%; 
+    height: 55%;  
+    margin-top: 5em; 
 }
 .button{  
-    margin: 2em 0em 0em  7em;
+   margin-top: 1em;
    background-color: var(--secondary);
    color:#FFFFFF;
    width:180px;
@@ -34,19 +36,139 @@
    border-radius: 10px;
    border: 1px solid var(--secondary) ;
 }
+.svg2{
+    align-self: center;
+    width: 50vw;
+    height: 85%;  
+    //margin-top: 5em; 
+}
 .title{
-    margin: 1em 0em 0em 2em;  
+    
     font-size: 4em;
     //font-family: 'ALeo',serif;
     font-weight:  700;
 }
 .subtitle{
-    margin: 1em 0em 0em  4em;
-    font-weight: 300;
+   
+    font-weight: 350;
     font-size: 2em;
-    //font-family:'Amiko', sans-serif;  
+    //font-family:'Barlow', sans-serif;  
 }
-@media (max-width: 600px) {
+.textdiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0em 0em 5em; 
+    align-self: flex-start;
+}
+.nextpage{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color:#C9D6DF;
+}
+.textdiv2{
+    align-self: flex-end;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em 3em 0em 1em; 
+    align-self: flex-start;
+}
+.title2{
+    
+    font-size: 3.5em;
+    font-weight:  600;
+}
+.subtitle2{
+    width: 35vw;
+    font-weight: 350;
+    font-size: 1.5em;
+   
+}
+.title3{
+    color:var(--white);
+    font-size: 3.5em;
+    font-weight:  600;
+}
+.subtitle3{
+    color:var(--white);
+    font-weight: 400;
+    font-size: 2.5em;
+    //width: 80vh;
+}
+.missionpg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #050506;
+    padding-bottom: 3em;
+}
+.textdiv3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 3em 0em 2em 0em; 
+    color:var(--white);
+}
+@media (max-width: 768px) {
+    .svg{
+        align-self: flex-end;
+        width: 50vw;
+        height: 55%;  
+        margin-top: 2em;
+        margin-right: 1em; 
+    }
+    
+    .svg2{
+        align-self: flex-start;
+        width: 50vw;
+        height: 85%;  
+        //margin-top: 5em; 
+    }
+    .title{
+        
+        font-size: 2.5em;
+        font-weight:  600;
+    }
+    .subtitle{
+       
+        font-weight: 350;
+        font-size: 1.2em;
+       
+    }
+    .textdiv{
+    
+        height: auto;
+        margin: 1em 0em 1em 2em; 
+        
+    }
+    .textdiv2{
+        width: auto;
+        margin: 5em 0em 0em 4em;     
+    }
+    .subtitle2{
+        height: auto;
+        font-weight: 350;
+        font-size: 1.2em;
+       
+    }
+    .title3{
+        font-weight: 400;
+        font-size: 2.5em;
+    }
+    .subtitle3{
+        width: 80vw;
+        font-weight: 350;
+        font-size: 1.2em;
+       
+    }
+
+
+}
+
+@media (max-width: 425px) {
     .root{
         flex-direction:column;   
     }
@@ -55,7 +177,7 @@
         width: 100vw;
        height: auto;
         //margin-top: 2em;
-        background-color: var(--white);  
+      //  background-color: var(--white);  
     }
     .scard{ 
         width: 100vw;
@@ -69,16 +191,39 @@
        
     }
     .title{
-        margin: 0em 0em 0em 0em;  
-        font-size: 2.5em;
+        margin: 0.5em 0em 0.3em 0em;  
+        font-size: 3.5em;
         //font-family: 'ALeo',serif;
         font-weight:  700;
     }
     .subtitle{
-        margin: 0em 0em 0em  0em;
+        margin: 0em 1em 1em  0em;
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 1.2em;
         //font-family:'Amiko', sans-serif;  
+    }
+    .nextpage{
+        flex-direction: column;
+        height: auto;
+    }
+    .textdiv2{
+        width: auto;
+        margin: 2em 0em 0em 1em;     
+    }
+    .svg2{
+        align-self: flex-start;
+        width: 80vw;
+        height: 75%;
+        margin: 2em 0em 2em 1em;   
+
+    }
+    .subtitle2{
+        height: auto;
+        font-weight: 350;
+        font-size: 1em;
+        padding-right: 1em;
+        width: auto;
+       
     }
 
 }

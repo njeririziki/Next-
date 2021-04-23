@@ -29,12 +29,12 @@
  
 }
 .header{
-   padding: 1em 0em 1em 0em;
+   padding: 1em 0em 0em 0em;
     color: var(--black);
     width: 100vw;
     display: flex;
     flex-direction: row;
-     justify-content: space-around;
+    justify-content: space-around;
     z-index: 1;  
    
 }
@@ -84,7 +84,7 @@
     }
 }
 .breadcrumbs{
-   align-self: center;
+  // align-self: center;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr ;
    grid-column-gap: 1em;
@@ -341,7 +341,7 @@
         background-color: #f8f8f8;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .bod{
         width:100%;
         background-color: var(--black);

@@ -17,7 +17,7 @@ $imagedir: '../public';
     flex-direction: row;
     height: 100vh;
     justify-content: flex-end;
-    @include background-image('featuresTransparent.png',#810000,contain,left )
+    @include background-image('featuresTransparent.png',#f1f8f5,contain,left )
    }
    .grid{
      //  margin-top:100px;
@@ -25,19 +25,23 @@ $imagedir: '../public';
        height: 80vh;
       
    }
+   .titlediv{
+       align-self: center;
+   }
    .title{
       align-self: center;
-      font-size: 2.5em;
+      font-size: 4em;
       font-weight: 600;
-      color: #c4c3c3;
+     
 
    }
    .subtitle{
     align-self: center;
-    font-size: 1em;
+    font-size: 2.5em;
     font-weight: 300; 
     padding-right: 2em;
     width: 65vw;
+   
    }
    .spage{
     display: flex;
@@ -46,10 +50,15 @@ $imagedir: '../public';
    
     height: auto;
    // background-color: var(--black);
-     background-color: #eeebdd;
+     background-color: #79a3b1 ;
     padding: 1em 0em 4em 0em;
    
    }
+   .svg{
+    margin: 1em 0em 1em 3em;
+    width: 300px;
+    height: 300px; 
+}
    .grid{
        align-self:center ;
     width: 80vw;
@@ -63,14 +72,40 @@ $imagedir: '../public';
     padding: 1em;
     font-size: 3em;
     font-weight: 600;
-   
+   color: #eeebdd;
    }
    .introsubtitle{
     font-size: 1em;
     font-weight: 300;
    }
  
-@media (max-width: 600px) {
+   @media (max-width: 768px) {
+    .titlediv{
+        align-self: center;
+        margin-left: 3em;
+    }
+    .title{
+        align-self: center;
+        font-size: 3em;
+        font-weight: 600;
+  
+     }
+     .subtitle{
+      align-self: center;
+      font-size: 2em;
+      font-weight: 300; 
+      padding-right: 1em;
+      width: 55vw;
+     
+     }
+     .intro{
+        padding: 1em;
+        font-size: 2.5em;
+       }
+     
+   }
+
+@media (max-width: 425px) {
     .fpage{
         
         display: flex;
@@ -78,7 +113,7 @@ $imagedir: '../public';
         justify-content: flex-end;
         align-items: flex-end;
         height: 100vh;
-        @include background-image('featuresTransparent.png',#810000,cover,left )
+        @include background-image('featuresTransparent.png',#eeebdd,cover,left )
     }
     .spage{
         display: flex;
@@ -91,7 +126,8 @@ $imagedir: '../public';
        }
   
       .title{
-       font-size: 2em;
+       font-size: 3em;
+     
       }
       .grid{
           width: 100vw;
@@ -100,5 +136,9 @@ $imagedir: '../public';
       .intro{
         padding: 1em;
         font-size: 2em;
+       
        }
+       .titlediv{
+        align-self: center;
+    }
 }

@@ -1,13 +1,16 @@
 import React from 'react';
-import {Card} from 'antd'
+import {Grid} from 'antd'
 import styles from '../../styles/Whyhasibu.module.scss'
 import LayoutHeader from '../../Component/LayoutHeader'
 import Books from '../../public/Books.svg'
 import Cloud from '../../public/Cloud_database.svg'
+import Security from '../../public/security.svg'
 import Footer from '@/components/Footer'
 
 
 const WhyHasibu = () => {
+
+    const screen = Grid.useBreakpoint()
     return ( 
         <div>
               <LayoutHeader /> 
@@ -17,7 +20,7 @@ const WhyHasibu = () => {
                 why hasibu?
             </h1>
             <h1 className={styles.subtitle}>
-            The technology speaks for itself
+            It is simply the best. We set yoy up with solutions uniquely designed for you.
             </h1>
            </div>
             {/* <Books className={styles.svg} /> */}
@@ -31,28 +34,39 @@ const WhyHasibu = () => {
             </h1> 
          </div> */}
         <div className={styles.nextpage}>
+            <div className={styles.cards}>  
+               
             <div className={styles.svgcontainer} >
             <Cloud  className={styles.othersvg}/>
+            </div>
             <div >
             <h1 className={styles.othertitles}>
-             Data Analytics
+             Remote Access
+            </h1>
+            <h1 className={styles.othersubtitles}>
+            get all the data you need to imporve your <br/>business compiled and presented amazaingly
+            </h1>   
+            </div>
+            </div>
+          <div className={styles.cards}>
+          {screen.xs?  <div className={styles.svgcontainer} >
+          <Security className={styles.othersvg}/>  
+          </div>:''}
+          <div> 
+             <h1 className={styles.othertitles}>
+             Data Security
             </h1>
             <h1 className={styles.othersubtitles}>
             get all the data you need to imporve your <br/>business compiled and presented amazaingly
             </h1> 
             </div>
-            </div>
-            <div className={styles.svgcontainer} >
-            <Cloud  className={styles.othersvg}/>
-            <div >
-            <h1 className={styles.othertitles}>
-             Data Analytics
-            </h1>
-            <h1 className={styles.othersubtitles}>
-            get all the data you need to imporve your <br/>business compiled and presented amazaingly
-            </h1> 
-            </div>   
-        </div>
+          {screen.xs? ''
+          : <div className={styles.svgcontainer} >
+          <Security className={styles.othersvg}/>  
+          </div>
+         } 
+          </div>
+           
         </div>
         <Footer/>
         </div>

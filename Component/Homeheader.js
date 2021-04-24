@@ -3,11 +3,12 @@ import Link from 'next/link';
 import { Menu, Button,Grid,Drawer, PageHeader,Layout} from 'antd';
 import styles from '../styles/Landing.module.scss'
 import Logo from '../public/logo.svg'
+import ContactForm from '@/components/Modal/ContactForm'
 
 const {Header} =Layout
 
 const HeaderComp=({split,whypg})=>{
-
+        const [visible, setVisible] = useState(false)
 
     return(
   
@@ -35,12 +36,13 @@ const HeaderComp=({split,whypg})=>{
        </Link> */}
         
      </div>
-     <Button className={styles.headerbutton}  >
-     <a
-        href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
-             Get Demo</a>
+     <Button className={styles.headerbutton} 
+     onClick={()=>setVisible(true)} >
+     
+             Get Demo
     
      </Button>
+     <ContactForm visible={visible} onCancel={()=>setVisible(false)}/>
      </div>
 
     

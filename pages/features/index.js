@@ -1,5 +1,4 @@
 import React from 'react';
-//import Grid from '@/components/Cards/Grid'
 import {Grid} from 'antd'
 import {BuildFilled, RadarChartOutlined, RiseOutlined,SlidersOutlined} from '@ant-design/icons'
 import GridList from '@/components/Cards/GridList'
@@ -51,8 +50,7 @@ const Features = () => {
                {screen.xs? ''
                : <p className={styles.subtitle}> We provide a variety of features essential to your business.
                All our packages include full tech support round the clock, anywhere anytime  </p>
-               } 
-                       
+               }         
                             </div> 
                 </div> 
              

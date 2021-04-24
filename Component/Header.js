@@ -3,11 +3,13 @@ import Link from 'next/link';
 import { Menu, Button,Grid,Drawer, PageHeader,Layout} from 'antd';
 import styles from '../styles/Landing.module.scss'
 import Logo from '../public/logo.svg'
+import ContactForm from '@/components/Modal/ContactForm'
 
 const {Header} =Layout
 
 const HeaderComp=({split,whypg})=>{
   const [change, setChange] = useState(false)
+  const [visible, setVisible] = useState(false)
   
   const onScroll =()=>{
     console.log('scrolled')
@@ -15,6 +17,7 @@ const HeaderComp=({split,whypg})=>{
   }
 
     return(
+      <>
       <Layout>
             <Header onScroll={onScroll} style={{backgroundColor:'#fafafa',position:'fixed'}} 
             className={whypg? styles.scrolheader:styles.header}>
@@ -40,16 +43,15 @@ const HeaderComp=({split,whypg})=>{
        </Link> */}
         
      </div>
-     <Button className={styles.headerbutton}  >
-     <a
-        href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
-             Get Demo</a>
-    
+     <Button className={styles.headerbutton} 
+     onClick={()=>setVisible(true)}>
+             Get Demo
      </Button>
      </Header>
 
       </Layout>
- 
+      <ContactForm visible={visible} onCancel={()=>setVisible(false)}/>
+ </>
     )
   }
 

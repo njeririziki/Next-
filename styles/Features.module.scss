@@ -17,7 +17,7 @@ $imagedir: '../public';
     flex-direction: row;
     height: 100vh;
     justify-content: flex-end;
-    @include background-image('featuresTransparent.png',#f1f8f5,contain,left )
+    @include background-image('features-transparent.png',#f1f8f5,contain,left )
    }
    .grid{
      //  margin-top:100px;
@@ -32,8 +32,6 @@ $imagedir: '../public';
       align-self: center;
       font-size: 4em;
       font-weight: 600;
-     
-
    }
    .subtitle{
     align-self: center;
@@ -50,9 +48,8 @@ $imagedir: '../public';
    
     height: auto;
    // background-color: var(--black);
-    // background-color: #c5c4c4 ;
-    background-image: linear-gradient(to right bottom, rgba(5, 5, 5, 0.7),
-     rgb(192,192,192));
+     background-color:#d8e8ea ;
+    //background-image: linear-gradient(to right bottom, rgba(5, 5, 5, 0.7), rgb(192,192,192));
     padding: 1em 0em 4em 0em;
    
    }
@@ -74,7 +71,8 @@ $imagedir: '../public';
     padding: 1em;
     font-size: 3em;
     font-weight: 600;
-   color: #eeebdd;
+    color:#11698e;
+   //color: #eeebdd;
    }
    .introsubtitle{
     font-size: 1em;
@@ -109,13 +107,8 @@ $imagedir: '../public';
 
 @media (max-width: 425px) {
     .fpage{
-        
-        display: flex;
-        flex-direction: column;
         justify-content: flex-end;
-        align-items: flex-end;
-        height: 100vh;
-        @include background-image('featuresTransparent.png',#eeebdd,cover,left )
+        @include background-image('features-transparent.png',#f1f8f5,cover,left )
     }
     .spage{
         display: flex;
@@ -128,8 +121,9 @@ $imagedir: '../public';
        }
   
       .title{
-       font-size: 3em;
-     
+       font-size: 2.8em;
+       margin-right: 0.5em;
+       color: #ec4646;
       }
       .grid{
           width: 100vw;
@@ -137,10 +131,12 @@ $imagedir: '../public';
       }
       .intro{
         padding: 1em;
-        font-size: 2em;
+        font-size: 1.7em;
+        color:#11698e;
        
        }
        .titlediv{
-        align-self: center;
+        align-self: flex-end;
+        margin-left: 0em;
     }
 }

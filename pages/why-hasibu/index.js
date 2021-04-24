@@ -16,11 +16,11 @@ const WhyHasibu = () => {
               <LayoutHeader /> 
          <div className={styles.root}>
            <div className={styles.titlediv}>
-           <h1 className={styles.title}>
+           {/* <h1 className={styles.title}>
                 why hasibu?
-            </h1>
+            </h1> */}
             <h1 className={styles.subtitle}>
-            It is simply the best. We set yoy up with solutions uniquely designed for you.
+            It is simply the best. We set your business up with solutions uniquely designed for you.
             </h1>
            </div>
             {/* <Books className={styles.svg} /> */}

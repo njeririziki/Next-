@@ -12,8 +12,7 @@ import { Menu, Button,Grid,Drawer} from 'antd';
 const {Item} = Menu
 const MenuComp=()=>{
     return(
-        <Menu  theme='dark' 
-        style={{backgroundColor:'#102027', color:'#ffffff', height:'100vh'}}>
+        <Menu  style={{width:'200px'}}>
         
             <Item key={1}>
             <Link href='/'>
@@ -22,7 +21,7 @@ const MenuComp=()=>{
             </Item>
             <Item key={5}>
             <Link href='/why-hasibu'>
-              <a> Why Jasibu</a>  
+              <a> Why Hasibu?</a>  
             </Link>
             </Item>
             <Item key={2}>

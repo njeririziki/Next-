@@ -83,7 +83,7 @@
 .subtitle2{
     width: 35vw;
     font-weight: 350;
-    font-size: 1.5em;
+    font-size: 2em;
    
 }
 .title3{
@@ -151,7 +151,7 @@
     .subtitle2{
         height: auto;
         font-weight: 350;
-        font-size: 1.2em;
+        font-size: 1.8em;
        
     }
     .title3{
@@ -162,7 +162,7 @@
         width: 80vw;
         font-weight: 350;
         font-size: 1.2em;
-       
+        align-self: center;
     }
 
 
@@ -199,7 +199,7 @@
     .subtitle{
         margin: 0em 1em 1em  0em;
         font-weight: 300;
-        font-size: 1.2em;
+        font-size: 1.5em;
         //font-family:'Amiko', sans-serif;  
     }
     .nextpage{
@@ -220,10 +220,15 @@
     .subtitle2{
         height: auto;
         font-weight: 350;
-        font-size: 1em;
+        font-size: 1.5em;
         padding-right: 1em;
+        width: auto;    
+    }
+    .subtitle3{
         width: auto;
-       
+        font-weight: 350;
+        font-size: 1.2em;
+        align-self: center;
     }
 
 }

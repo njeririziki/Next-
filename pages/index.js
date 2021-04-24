@@ -51,7 +51,7 @@ function HomePage() {
             
           </div>
           <div className={styles.scard}>
-         <Business className={styles.svg}/>
+         <Carousel className={styles.svg}/>
           </div>
           </div>
           <div className={styles.secondpage}>

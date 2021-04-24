@@ -9,16 +9,17 @@
 
  const FeatCarousel = () => {
      return ( 
-        <div className={styles.othersvgs}>
-         <Carousel autoplay
+       <div className={styles.carousel}>
+        <Carousel 
+         autoplay
          effect='fade' dots={false}>
             <Analytics/>
             <Business/>
             <Investment/>
          
          </Carousel>
-        </div>
-    
+       </div>
+     
       );
  }
   

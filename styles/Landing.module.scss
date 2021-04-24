@@ -84,7 +84,7 @@
     }
 }
 .breadcrumbs{
-  // align-self: center;
+  //  align-self: center;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr ;
    grid-column-gap: 1em;
@@ -115,6 +115,11 @@
     width: 40vw;
     height: 65%;  
     margin-top: 0%; 
+}
+.carousel{
+    align-self: center;
+    width: 70vh;
+    height: auto;
 }
 .othersvgs{
    // align-self: center;
@@ -282,6 +287,9 @@
         height: 60%;  
         padding-bottom: 1em;    
     }
+    .carousel{
+        width: 60vh;
+    }
     .othersvgs{
         align-self: center;
         margin-top: 0px;
@@ -382,6 +390,9 @@
         align-self: center;
         width: 75vw;
         height: 50%;     
+    }
+    .carousel{
+        width: 45vh;
     }
     .othersvgs{
         align-self: center;

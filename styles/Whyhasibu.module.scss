@@ -33,7 +33,8 @@ $imagedir: '../public';
     width: 40vw;
     font-weight: 600;
     font-size: 4em; 
-    color: #dbf6e9;
+    //color: #dbf6e9;
+    color: #f4f9fc;
     font-family: 'Barlow Condensed', sans-serif;
     margin-right: 1em ; 
 }
@@ -118,7 +119,6 @@ $imagedir: '../public';
            margin: 5em 1em 0em 1em;
            font-size: 3em;
            font-weight: 700;
-           color:var(--white);
            font-family: 'Barlow', sans-serif;
        }
             .othertitles{
@@ -196,7 +196,7 @@ $imagedir: '../public';
         width: auto;
         font-weight: 600;
         font-size: 3em; 
-        color:#98c2ad;
+        color: #f4f9f9;
         font-family: 'Barlow Condensed', sans-serif; 
     }
     .othertitles{

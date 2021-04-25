@@ -6,13 +6,71 @@ import Mobile from '../public/Mobile.svg'
 import Analytics from '../public/Analytics.svg'
 import styles from '@/styles/Landing.module.scss'
 import Image from 'next/image'
+import GridList from '../Component/Cards/GridList'
  //import Header from '@/Component/Header'
 // import Drawer from '../Component/Drawer'
 import LayoutHeader from '@/components/LayoutHeader'
 import Carousel from '@/components/Cards/Carousel'
 import Footer from '@/components/Footer'
+import {ArrowRightOutlined} from '@ant-design/icons'
 
+const list =(
+  <div className={styles.packages}>
+    <div className={styles.packageheader}  style={{backgroundColor:'#ff8f00'}}>
+    <p> Standard Package </p>
+     <p>$50/yr</p>
+    </div>
+    
+    <ul >
+      <li>POS</li>
+      <li> Product </li>
+      <li> Monthly Reports</li>
+      <li> Sales </li>
+      <li> Scheduling</li>
 
+    </ul>
+  <p> Plus 1 month free trial</p>
+  <Button  size='large' 
+     style={{backgroundColor:'#ff8f00',color:'#ffffff'}} >
+           Buy now  <ArrowRightOutlined/>
+  </Button>
+  </div>
+)
+const premlist =(
+  <div className={styles.packages}>
+        <div className={styles.packageheader} >
+        <p> Premium Package </p>
+         <p>$100/yr</p>
+        </div>
+  
+    <ul>
+      <li> Standard package</li>
+      <li>Taxes</li>
+      <li> Customized Reports</li>
+      <li> Notifications</li>
+      <li> Analytics</li>
+    </ul>
+    <p> Start with a free trial</p>
+    <Button  size='large' 
+      style={{backgroundColor:'#008700',color:'#ffffff'}} >
+          Buy now <ArrowRightOutlined/>
+       </Button>
+  </div>
+)
+
+const items=[
+  {key:1,
+    
+    obj: list, 
+  //title:'Standard',
+ // cover: "/payment_completed.svg" ,
+    },
+  {key:2,
+      obj: premlist, 
+  //title:'Premium',
+ // cover: "/printer.jpg",
+ }
+  ]
 
 
 function HomePage() {
@@ -26,7 +84,7 @@ function HomePage() {
     setChange(true)
   }
     return (
-      <>
+      < div className={styles.bod}>
          <div className={styles.root} onScroll={onScroll} >
           < div className={styles.fcard}>
           <LayoutHeader split={true} home={true}/>  
@@ -55,18 +113,29 @@ function HomePage() {
           </div>
           </div>
           <div className={styles.secondpage}>
-         {screen.xs? '':
           <div className={styles.scard}>
+         {screen.xs? '':
+          
           <Analytics className={styles.svg}/>
-           </div>}
+           }
+           </div>
           <div className={styles.whattext}>
-         <h2 className={styles.othertitle} >
-             What is Hasibu?  </h2>
+            <div>
+            <p className={styles.othertitle} >
+             What is Hasibu?  </p>
            <p className={styles.othersubtitle}  >
            Hasibu is a business management tool. It is the complete package every
             business owner and manager is looking for.No matter where you are,
             we can make it happen
            </p >
+           <p className={styles.othertitle}><u> We offer</u></p>
+           <ul className={styles.othersubtitle}>
+             <li> Flexible </li>
+             <li> High Performance</li>
+             <li>  Big returns</li>
+           </ul>
+            </div>
+        
       
          </div>
          {screen.xs?
@@ -74,9 +143,16 @@ function HomePage() {
           <Analytics className={styles.svg}/>
            </div>:''}
         </div>  
+        <div className={styles.thirdpage}>
+          <p>Our Packages</p>
+          <div className={styles.grid}>
+          <GridList  data={items} />  
+          </div>
+        
+        </div>
             
       <Footer/>
-      </>
+      </div>
    
     )
 }

@@ -1,5 +1,6 @@
-import { List, Card, Statistic } from 'antd';
+import { List, Card, Button} from 'antd';
 import Image from 'next/image'
+import {ArrowRightOutlined} from '@ant-design/icons'
 
 const {Meta}= Card 
 
@@ -18,8 +19,9 @@ const GridCards = ({data}) => {
           <List.Item key={total.key}
           style={{ fontSize:'1.5em'}}>
             <Card hoverable={true}
-            cover={<Image src={total.cover} alt='Cover'
-            width='400px' height='300px'/>} >
+            cover={total.cover?<Image src={total.cover} alt='Cover'
+            width='400px' height='300px'/> : null} 
+            >
            <Meta 
            avatar={total.icon}
            style={{fontSize:'1.5em'}}

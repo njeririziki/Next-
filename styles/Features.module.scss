@@ -112,7 +112,7 @@ $imagedir: '../public';
 @media (max-width: 425px) {
     .fpage{
         justify-content: flex-end;
-        @include background-image('features-transparent.png',#f1f8f5,cover,left )
+        @include background-image('features-transparent.png',#f6f9fc,cover,left )
     }
     .spage{
         display: flex;

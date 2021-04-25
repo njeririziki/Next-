@@ -1,5 +1,7 @@
 import { List, Card, Statistic } from 'antd';
-const {Meta}= Card
+import Image from 'next/image'
+
+const {Meta}= Card 
 
 const GridCards = ({data}) => {
     return (  
@@ -16,8 +18,8 @@ const GridCards = ({data}) => {
           <List.Item key={total.key}
           style={{ fontSize:'1.5em'}}>
             <Card hoverable={true}
-            cover={total.cover}
-            >
+            cover={<Image src={total.cover} alt='Cover'
+            width='400px' height='300px'/>} >
            <Meta 
            avatar={total.icon}
            style={{fontSize:'1.5em'}}

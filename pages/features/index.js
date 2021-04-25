@@ -17,22 +17,22 @@ const items=[
      
        obj: 'We create clean, beautiful and engaging websites that meet your business objectives.', 
    title:'Analytics',
-   cover: <Analytics /> ,
+   cover: "/payment_completed.svg" ,
    icon:<BuildFilled/>  },
    {key:2,
        obj:'We develop websites using both open-source and custom framework solutions ', 
    title:'Performance Review',
-   cover: <Business/>,
+   cover: "/printer.jpg",
   icon:<RadarChartOutlined/>},
    {key:3,
        obj: "We use scientific-driven practices to rank you on first page of Google ",
         title:'Finacial Management',
-        cover: <Security/>,
+        cover: "/cash-register-min.jpg",
       icon:<RiseOutlined/> },
    {key:4,
      obj: "We use scientific-driven practices to rank you on first page of Google and get your brand in front. ",
      title:'POS',
-     cover: <Security/>,
+     cover: "/Error_notification.svg",
     icon:<SlidersOutlined/>}
 ]
 

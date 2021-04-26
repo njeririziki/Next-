@@ -1,5 +1,4 @@
 import { List, Card, Button} from 'antd';
-import Image from 'next/image'
 import {ArrowRightOutlined} from '@ant-design/icons'
 
 const {Meta}= Card 

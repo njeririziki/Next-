@@ -19,7 +19,7 @@ const GridCards = ({data}) => {
           <List.Item key={total.key}
           style={{ fontSize:'1.5em'}}>
             <Card hoverable={true}
-            cover={total.cover?<Image src={total.cover} alt='Cover'
+            cover={total.cover?<img src={total.cover} alt='Cover'
             width='400px' height='300px'/> : null} 
             >
            <Meta 

@@ -11,7 +11,7 @@ import Books from '../../public/Books.svg'
 import styles from '@/styles/About.module.scss'
 import LayoutHeader from '@/components/LayoutHeader'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 function AboutPage() {
 

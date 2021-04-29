@@ -115,8 +115,8 @@ function HomePage() {
           <div className={styles.secondpage}>
           <div className={styles.scard}>
          {screen.xs? '':
-          
-          <Analytics className={styles.svg}/>
+            <img src='/data-visualization.jpg' className={styles.svg}/>
+          // <Analytics className={styles.svg}/>
            }
            </div>
           <div className={styles.whattext}>
@@ -140,7 +140,8 @@ function HomePage() {
          </div>
          {screen.xs?
           <div className={styles.scard}>
-          <Analytics className={styles.svg}/>
+          {/* <Analytics className={styles.svg}/> */}
+          <img src='/data-visualization.jpg' width='400px' height='400px'/>
            </div>:''}
         </div>  
         <div className={styles.thirdpage}>

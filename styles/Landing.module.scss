@@ -3,13 +3,13 @@
     flex-direction: column;
     width: 100%;
     height: 100%;  
-    background-color: #e9f8ff;
+   // background-color: #e9f8ff;
     // background-color: #000000;
 }
 .root{
     display: flex;
     flex-direction: row;  
-    background-color: #e9f8ff; 
+  
 }
 
 .fcard{
@@ -38,7 +38,8 @@
     flex-direction: row;
     justify-content: space-around;
     z-index: 1;  
-   background-color:#FFFFFF;
+    background-color: #e9f8ff; 
+  
 }
 .scrolheader{
     margin-top: 10px;
@@ -139,10 +140,10 @@
     font-weight: 600;
 }
 .subtitle{
-    margin: 1em 0em 0em  4em;
+    margin: 1em 0em 0em 5em;
     font-weight: 300;
-    font-size: 2em;
-   // font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8em;
+    font-family: 'Barlow Condensed', sans-serif;
    // font-family: 'Commissioner', sans-serif;
 }
 .secondpage{
@@ -173,7 +174,7 @@
 }
 .othersubtitle{
    // font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.3em; 
+    font-size: 1.2em; 
     font-weight: 350;
     margin: 0em 2em 1em 0em; 
    // font-family: 'Commissioner', sans-serif;  
@@ -235,6 +236,23 @@
     height: 90vh;
     padding: 2em 1em 0em 3em;
     align-self: center;
+}
+.reviewcontainer{
+    width: 100%;
+    height: 40vh;
+    font-size: 2em;
+    //box-shadow: 10px 10px 10px #a6d9fa;
+    //border-radius: 15px;
+   color: #102027;
+   background: #d3e2e9;
+    //background-color: #001528;
+   // border-top: 1px solid #e9e7e7;
+    //border-left: 1px solid #dad7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   // margin: 2em ;
+    padding: 2em;
 }
 
 @media (max-width: 1055px) {

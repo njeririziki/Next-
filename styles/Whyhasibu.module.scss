@@ -14,11 +14,11 @@ $imagedir: '../public';
   justify-content: center;
   width:100vw;
   height: 100vh;
- @include background-image('chess-board-min.png',#0f0f0f,right bottom)
+ //@include background-image('chess-board-min.png',#0f0f0f,right bottom)
 }
 .titlediv{
    // padding-left: 2em;  
-    align-self: flex-start;
+    align-self: center;
    
    
 }
@@ -33,8 +33,9 @@ $imagedir: '../public';
     width: 40vw;
     font-weight: 600;
     font-size: 4em; 
+    align-self: center;
     //color: #dbf6e9;
-    color: #f4f9fc;
+   // color: #f4f9fc;
     font-family: 'Barlow Condensed', sans-serif;
     margin-right: 1em ; 
 }
@@ -108,7 +109,7 @@ $imagedir: '../public';
 @media (max-width: 768px) {
     .root{
         justify-content: center;
-           @include background-image('chess-board-min.png', #f4f9f9, right bottom )
+           //@include background-image('chess-board-min.png', #f4f9f9, right bottom )
          }
        .titlediv{
            margin-left: 0px;
@@ -170,7 +171,7 @@ $imagedir: '../public';
         display: flex;
         flex-direction: column;
         height: 100vh;
-        @include background-image('chess-transparent-min.png', #123d4b ,right bottom )
+        //@include background-image('chess-transparent-min.png', #123d4b ,right bottom )
       }
     .svg{
         margin-top: 50px;

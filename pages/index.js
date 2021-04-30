@@ -31,7 +31,7 @@ const list =(
     </ul>
   <p> Plus 1 month free trial</p>
   <Button  size='large' 
-     style={{backgroundColor:'#ff8f00',color:'#ffffff'}} >
+     style={{backgroundColor:'#ff8f00',color:'#ffffff', borderRadius:'10px'}} >
            Buy now  <ArrowRightOutlined/>
   </Button>
   </div>
@@ -52,7 +52,7 @@ const premlist =(
     </ul>
     <p> Start with a free trial</p>
     <Button  size='large' 
-      style={{backgroundColor:'#008700',color:'#ffffff'}} >
+      style={{backgroundColor:'#008700',color:'#ffffff',borderRadius:'10px'}} >
           Buy now <ArrowRightOutlined/>
        </Button>
   </div>
@@ -143,14 +143,20 @@ function HomePage() {
           {/* <Analytics className={styles.svg}/> */}
           <img src='/data-visualization.jpg' width='400px' height='400px'/>
            </div>:''}
-        </div>  
+         
+        </div> 
+        <div className={styles.reviewcontainer}>
+          Customer Reviews
+        </div> 
         <div className={styles.thirdpage}>
+       
           <p>Our Packages</p>
           <div className={styles.grid}>
           <GridList  data={items} />  
           </div>
         
         </div>
+      
             
       <Footer/>
       </div>

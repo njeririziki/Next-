@@ -89,14 +89,15 @@ function HomePage() {
           < div className={styles.fcard}>
           <LayoutHeader split={true} home={true}/>  
          <h1 className={styles.title} >
-         Simple. Reliable. Straight forward.
+         Simple. Reliable. <br/>
+         <span style={{color:'#1890FF'}}>Straight forward.</span>
          </h1>
-          {screen.xs? <p>Small</p>:
-           <h1 className={styles.subtitle}  >
+         
+           <p className={styles.subtitle}  >
             You can run your business  at your own convenience.
             From the comfort of your home. 
              Let us show you how ... 
-           </h1 >}
+           </p >
           
            <Button className={styles.button} size='large' shape='round'>
            <a
@@ -109,7 +110,10 @@ function HomePage() {
             
           </div>
           <div className={styles.scard}>
-         <Carousel className={styles.svg}/>
+            <div className={styles.svgcont}>
+            <Carousel className={styles.svg}/>
+            </div>
+        
           </div>
           </div>
           <div className={styles.secondpage}>
@@ -140,8 +144,8 @@ function HomePage() {
          </div>
          {screen.xs?
           <div className={styles.scard}>
-          {/* <Analytics className={styles.svg}/> */}
-          <img src='/data-visualization.jpg' width='400px' height='400px'/>
+          <Analytics className={styles.svg}/> 
+         
            </div>:''}
          
         </div> 

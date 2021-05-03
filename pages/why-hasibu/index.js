@@ -7,7 +7,7 @@ import Cloud from '../../public/Cloud_database.svg'
 import Security from '../../public/security.svg'
 import Payment from '../../public/payment_completed.svg'
 import Footer from '@/components/Footer'
-
+import Button from '@/components/Button/Button'
 
 const WhyHasibu = () => {
 
@@ -17,12 +17,16 @@ const WhyHasibu = () => {
               <LayoutHeader /> 
          <div className={styles.root}>
            <div className={styles.titlediv}>
-           {/* <h1 className={styles.title}>
-                why hasibu?
-            </h1> */}
+            <h1 className={styles.title}>
+              Choose  <span style={{color:'#1890FF'}}> Hasibu</span>
+            </h1> 
             <h1 className={styles.subtitle}>
-       Set your business up with solutions designed for you.
+       We set your business up with solutions that uniquely designed for you. Contact us
+       for more details about our amazing features and more.
             </h1>
+            <Button/>
+          
+          
            </div>
             {/* <Books className={styles.svg} /> */}
         </div>

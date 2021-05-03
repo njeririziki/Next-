@@ -150,7 +150,20 @@ function HomePage() {
          
         </div> 
         <div className={styles.reviewcontainer}>
-          Customer Reviews
+          <div className={styles.avatar}>
+           <img  src='/happy-sticky.jpg' width='300px' height='300px' 
+           style={{borderRadius:'50%'}}/>
+          </div>
+          <div className={styles.reviewcontent}>
+           
+          <p> I have had the most wonderful
+         experience since i started working with Hasibu. Anyone looking to 
+         switch things up ... I would highly recommend trying Hasibu!
+         </p> 
+         <p className={styles.othersubtitle}
+         style={{fontSize:'1em'}}> Nakshi Kwamb -CEO Sajy Chain Stores</p>
+          </div>
+        
         </div> 
         <div className={styles.thirdpage}>
        

@@ -13,7 +13,7 @@ const LayoutHeader = ({split,home}) => {
     return (
        <>
         {screen.xs? <SmallScreen home={home} />
-        : (home? <Homeheader/>:  <Header split={split}/>)
+        : (<Homeheader/>)
              }
       
       </>

@@ -19,25 +19,31 @@ $imagedir: '../public';
 .titlediv{
    // padding-left: 2em;  
     align-self: center;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
    
 }
 .title{
-    font-size: 2.5em;
-    color: #2b2e4a;
+    font-size: 4.5em;
+    align-self: center;
+  //  color: var(--secondary);
    margin-top: 2em;
     font-weight: 700;
+    font-family: 'Barlow ', sans-serif;
 }
 .subtitle{
-    margin-top: 2em;
-    width: 40vw;
-    font-weight: 600;
-    font-size: 4em; 
-    align-self: center;
-    //color: #dbf6e9;
-   // color: #f4f9fc;
+   // margin-top: 2em;
+    width: 30vw;
+    font-weight: 400;
+    font-size: 2em; 
+    text-align: center;
+
+     //color: #dbf6e9;
+       color: #3e474d;
     font-family: 'Barlow Condensed', sans-serif;
-    margin-right: 1em ; 
+    margin-bottom: 2em ; 
 }
 // .pageheader{
 //    background-color: var(--white);
@@ -186,7 +192,7 @@ $imagedir: '../public';
     .title{
         margin: 0em 0em 0em 2em;
         font-size: 2em;
-        color: var(--white);
+        color:#000000;
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
     }

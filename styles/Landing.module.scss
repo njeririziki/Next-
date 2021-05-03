@@ -37,9 +37,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    z-index: 1;  
+    z-index: 2;  
     background-color: var(--white); 
-   box-shadow: 10px 10px 10px #dddddd;
+   box-shadow: 5px 5px 5px #dddddd;
+   position: fixed;
 }
 .scrolheader{
     margin-top: 10px;
@@ -137,7 +138,7 @@
     height: 60%;
 }
 .title{
-    margin: 1em 0em 0em 2em;  
+    margin: 2.5em 0em 0em 2em;  
     font-size: 4.5em;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
@@ -193,8 +194,9 @@
     height:auto;
     width:100vw;
     font-size: 3em;
-    background-color: #001528;
-     color: #f1efef;
+    background: #e1eff7;
+ //   background-color: #001528;
+ //    color: #f1efef;
    
     padding-bottom: 2em;
      padding-top: 1em;
@@ -242,20 +244,38 @@
 }
 .reviewcontainer{
     width: 100%;
-    height: 40vh;
-    font-size: 2em;
+    height: auto;
+    padding: 2em ;
+
     //box-shadow: 10px 10px 10px #a6d9fa;
     //border-radius: 15px;
    color: #102027;
-   background: #d3e2e9;
+  background: #eff5f8;
     //background-color: #001528;
    // border-top: 1px solid #e9e7e7;
     //border-left: 1px solid #dad7d7;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   // justify-content: space-around;
+  
    // margin: 2em ;
-    padding: 2em;
+  
+}
+.avatar{
+    align-self: flex-start;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0em 4em 0em 4em;
+}
+.reviewcontent{
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+   // margin-right: 2em;
+   width: 50vw;
+
 }
 
 @media (max-width: 1055px) {
@@ -468,6 +488,30 @@
         align-self: center;
         color:'#ffffff';
         background-color: #f8f8f8;
+    }
+    .reviewcontainer{
+        width: 100%;
+        height: auto;
+        padding: 2em ;
+        flex-direction: column;
+    }
+
+    .avatar{
+        align-self: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+       
+        margin: 0em 1em 2em 1em;
+    }
+    .reviewcontent{
+        align-self: center;
+        font-size: 1.2em;
+        font-weight: 400;
+        font-style: italic;
+       // margin-right: 2em;
+       width: 90vw;
+    
     }
 }
 @media (max-width: 320px) {

@@ -8,8 +8,8 @@ const SmallScreen=({home})=>{
     return( 
       <>
         <div className={ home? styles.homeheader:styles.smallheader } >
-        <h1  className={home? styles.homelogo:styles.headerlogo}> Hasibu</h1>
-        <MenuUnfoldOutlined className={home? styles.homelogo:styles.headerlogo} onClick={()=>setOpen(true)} />
+        <h1  className={styles.headerlogo}> Hasibu</h1>
+        <MenuUnfoldOutlined className={styles.headerlogo} onClick={()=>setOpen(true)} />
        </div>
        <Drawer  visible={open} onClose={()=>setOpen(false)}/>
        </>

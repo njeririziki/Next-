@@ -24,7 +24,7 @@ const GridCards = ({data}) => {
             >
            <Meta 
            avatar={total.icon}
-           style={{fontSize:'1.5em'}}
+           style={{fontSize:'1.3em'}}
             title={total.title}
                   description={total.obj}/>
             </Card>

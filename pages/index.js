@@ -117,38 +117,77 @@ function HomePage() {
           </div>
           </div>
           <div className={styles.secondpage}>
-          <div className={styles.scard}>
+      
          {screen.xs? '':
             <img src='/data-visualization.jpg' className={styles.svg}/>
           // <Analytics className={styles.svg}/>
            }
-           </div>
+         
           <div className={styles.whattext}>
-            <div>
+         
             <p className={styles.othertitle} >
-             What is Hasibu?  </p>
+            Hasibu  </p>
            <p className={styles.othersubtitle}  >
            Hasibu is a business management tool. It is the complete package every
             business owner and manager is looking for.No matter where you are,
-            we can make it happen
+            we can make it happen.Enjoy seamless, gliding play every time. 
+            Give yourself a round of applause! You did it, well done!
            </p >
-           <p className={styles.othertitle}><u> We offer</u></p>
-           <ul className={styles.othersubtitle}>
+           <Button style={{background:'#1890FF', color:'#ffffff'}} size='large' >
+           <a
+            href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
+             Learn more</a> 
+           </Button>
+           {/* <p className={styles.othertitle} style={{color}}><u> We offer</u></p> */}
+           {/* <ul className={styles.othersubtitle}>
              <li> Flexible </li>
              <li> High Performance</li>
              <li>  Big returns</li>
-           </ul>
-            </div>
+           </ul> */}
         
       
          </div>
          {screen.xs?
-          <div className={styles.scard}>
+        
           <Analytics className={styles.svg}/> 
-         
-           </div>:''}
+         :''}
          
         </div> 
+        <div className={styles.secondpage}>
+      
+          <div className={styles.whattext}>
+           
+            <p className={styles.othertitle} >
+            Hasibu  </p>
+           <p className={styles.othersubtitle}  >
+           Hasibu is a business management tool. It is the complete package every
+            business owner and manager is looking for.No matter where you are,
+            we can make it happen. Enjoy seamless, gliding play every time.
+            Give yourself a round of applause! You did it, well done! 
+           </p>
+           <Button style={{background:'#1890FF', color:'#ffffff'}} size='large' >
+           <a
+            href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
+             Learn more</a> 
+           </Button>
+           {/* <p className={styles.othertitle} style={{color}}><u> We offer</u></p> */}
+           {/* <ul className={styles.othersubtitle}>
+             <li> Flexible </li>
+             <li> High Performance</li>
+             <li>  Big returns</li>
+           </ul> */}
+           
+         </div>
+         {screen.xs?
+          
+          <Analytics className={styles.svg}/> 
+           :
+            <img src='/Error_notification.svg' className={styles.svg} />
+         }
+        
+        </div> 
+        
+        
         <div className={styles.reviewcontainer}>
           <div className={styles.avatar}>
            <img  src='/happy-sticky.jpg' width='300px' height='300px' 
@@ -160,8 +199,8 @@ function HomePage() {
          experience since i started working with Hasibu. Anyone looking to 
          switch things up ... I would highly recommend trying Hasibu!
          </p> 
-         <p className={styles.othersubtitle}
-         style={{fontSize:'1em'}}> Nakshi Kwamb -CEO Sajy Chain Stores</p>
+         <h1 className={styles.clientname}
+        > Nakshi Kwamb -CEO Sajy Chain Stores</h1>
           </div>
         
         </div> 

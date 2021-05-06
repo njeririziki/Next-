@@ -111,6 +111,13 @@ $imagedir: '../public';
     display: flex;
     margin: 1em 0em 1em 0em;
 }
+.learnmorebtn{
+    background-color: var(--secondary);
+    color:#FFFFFF;
+    width:170px;
+    height: 40px;
+    align-self: center;
+}
 @media (max-width: 768px) {
     .root{
         justify-content: center;

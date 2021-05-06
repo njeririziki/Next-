@@ -133,7 +133,7 @@ function HomePage() {
             we can make it happen.Enjoy seamless, gliding play every time. 
             Give yourself a round of applause! You did it, well done!
            </p >
-           <Button style={{background:'#1890FF', color:'#ffffff'}} size='large' >
+           <Button className={styles.learnmorebtn} size='large' >
            <a
             href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
              Learn more</a> 
@@ -165,7 +165,7 @@ function HomePage() {
             we can make it happen. Enjoy seamless, gliding play every time.
             Give yourself a round of applause! You did it, well done! 
            </p>
-           <Button style={{background:'#1890FF', color:'#ffffff'}} size='large' >
+           <Button className={styles.learnmorebtn} size='large' >
            <a
             href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
              Learn more</a> 

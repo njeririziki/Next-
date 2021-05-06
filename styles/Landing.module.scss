@@ -254,6 +254,17 @@
     padding: 2em 1em 0em 3em;
     align-self: center;
 }
+.featcarousel{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    font-size: 2em;
+    font-weight: 400;
+// background-color: #eff5f8;
+}
 .reviewcontainer{
     width: 100%;
     height: auto;
@@ -358,18 +369,27 @@
         height: 55%; 
     }
     .title{
-        margin: 1em 0em 0em 0.5em;
-        font-size: 3em;
+        margin: 2em 0em 0em 0.5em;
+        font-size: 3.5em;
     }
     .subtitle{
         margin: 1em 0em 0em  1em;
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .svg{
         //align-self: center;
         width: 45vw;
         height: 55%;     
+    }
+    .featcarousel{
+        display: flex;
+      
+        width: auto;
+        height: auto;
+        font-size: 1.5em;
+        font-weight: 400;
+    // background-color: #eff5f8;
     }
 }
 @media (max-width: 425px) {

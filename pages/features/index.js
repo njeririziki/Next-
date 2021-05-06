@@ -9,7 +9,7 @@ import Analytics from '../../public/Analytics.svg'
  import Security from '../../public/security.svg'
  import styles from '@/styles/Features.module.scss'
  import Footer from '@/components/Footer'
-
+ import Carousel from '@/components/Cards/MultiCarousel'
 
 
 const items=[
@@ -64,6 +64,7 @@ const Features = () => {
               <GridList  data={items} />   
                </div>  
           
+        
             
              <div>
              </div> 

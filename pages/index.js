@@ -7,12 +7,21 @@ import Analytics from '../public/Analytics.svg'
 import styles from '@/styles/Landing.module.scss'
 //import Image from 'next/image'
 import GridList from '../Component/Cards/GridList'
- //import Header from '@/Component/Header'
+import MultiCarousel from '@/components/Cards/MultiCarousel'
 // import Drawer from '../Component/Drawer'
 import LayoutHeader from '@/components/LayoutHeader'
 import Carousel from '@/components/Cards/Carousel'
 import Footer from '@/components/Footer'
 import {ArrowRightOutlined} from '@ant-design/icons'
+
+const features=[
+  {title:'Issue One',
+   desc:'This is it'},
+   {title:'Issue Two',
+   desc:'This is it'},
+   {title:'Issue Three',
+   desc:'This is it'}
+]
 
 const list =(
   <div className={styles.packages}>
@@ -186,7 +195,10 @@ function HomePage() {
          }
         
         </div> 
-        
+        <div className={styles.featcarousel}>
+          <p> We offer a wide range of features </p>
+          <MultiCarousel features={features}/>
+        </div>
         
         <div className={styles.reviewcontainer}>
           <div className={styles.avatar}>

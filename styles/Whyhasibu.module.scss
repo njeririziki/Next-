@@ -14,6 +14,7 @@ $imagedir: '../public';
   justify-content: center;
   width:100vw;
   height: 100vh;
+  background: #f1f8f5;
  //@include background-image('chess-board-min.png',#0f0f0f,right bottom)
 }
 .titlediv{
@@ -121,24 +122,26 @@ $imagedir: '../public';
 @media (max-width: 768px) {
     .root{
         justify-content: center;
+        height: auto;
+        padding-bottom: 3em;
            //@include background-image('chess-board-min.png', #f4f9f9, right bottom )
          }
-       .titlediv{
-           margin-left: 0px;
-         height: inherit; 
-       }
+    //    .titlediv{
+    //        margin-left: 0px;
+    //      height: inherit; 
+    //    }
      
-       .title{
-           margin: 5em 1em 0em 1em;
-           font-size: 3em;
-           font-weight: 700;
-           font-family: 'Barlow', sans-serif;
-       }
-            .othertitles{
-            margin: 1em 1em 1em 1em;
-            font-size: 2em;
-            // color: #ffffff;
-        }
+    //    .title{
+    //        margin: 5em 1em 0em 1em;
+    //        font-size: 3em;
+    //        font-weight: 700;
+    //        font-family: 'Barlow', sans-serif;
+    //    }
+    //         .othertitles{
+    //         margin: 1em 1em 1em 1em;
+    //         font-size: 2em;
+    //         // color: #ffffff;
+    //     }
         .othersubtitles{
             font-size: 1.5em;
             font-weight: 350;
@@ -153,14 +156,10 @@ $imagedir: '../public';
             height: auto; 
         }
         .subtitle{
-        margin-left: 1em;
-        margin-top: 2em;
-        width: auto;
-        font-weight: 600;
-        font-size: 3em; 
-        color: #dbf6e9;
-        font-family: 'Barlow', sans-serif;
-    }
+    //     margin-left: 1em;
+    //     margin-top: 2em;
+           width: 70vw;
+          }
         .svgcontainer{
             width: max-content;
             height: 70%;
@@ -182,7 +181,7 @@ $imagedir: '../public';
     .root{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+       
         //@include background-image('chess-transparent-min.png', #123d4b ,right bottom )
       }
     .svg{
@@ -192,26 +191,25 @@ $imagedir: '../public';
         padding-left: 1em;
     }
     .titlediv{
-        margin-left: 0px;
-        margin-bottom: 2em;
+        
     }
+    
     .title{
-        margin: 0em 0em 0em 2em;
-        font-size: 2em;
-        color:#000000;
-        font-family: 'Barlow', sans-serif;
-        font-weight: 400;
+       text-align: center;
+      align-self: center;
+      margin-top: 0.5em;
+       
     }
-    .subtitle{
-        margin-top: 0em;
-        align-content : center;
-        margin-left: 1em;
-        width: auto;
-        font-weight: 600;
-        font-size: 3em; 
-        color: #f4f9f9;
-        font-family: 'Barlow Condensed', sans-serif; 
-    }
+    // .subtitle{
+    //     margin-top: 0em;
+    //     align-content : center;
+    //     margin-left: 1em;
+    //     width: auto;
+    //     font-weight: 600;
+    //     font-size: 3em; 
+    //     color: #f4f9f9;
+    //     font-family: 'Barlow Condensed', sans-serif; 
+    // }
     .othertitles{
         margin: 1em 1em 0em 1em;
         font-size: 1.8em; 
@@ -232,6 +230,7 @@ $imagedir: '../public';
     }
     .textdiv{  
         align-self: flex-start;
+        
     }
     
     .othersvg{

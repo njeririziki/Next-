@@ -119,9 +119,9 @@ function HomePage() {
             
           </div>
           <div className={styles.scard}>
-            <div className={styles.svgcont}>
-            <Carousel className={styles.svg}/>
-            </div>
+           
+            <Carousel />
+         
         
           </div>
           </div>
@@ -142,7 +142,7 @@ function HomePage() {
             we can make it happen.Enjoy seamless, gliding play every time. 
             Give yourself a round of applause! You did it, well done!
            </p >
-           <Button className={styles.learnmorebtn} size='large' >
+           <Button className={styles.learnmorebtn} size='large'  shape='round'>
            <a
             href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
              Learn more</a> 
@@ -174,7 +174,7 @@ function HomePage() {
             we can make it happen. Enjoy seamless, gliding play every time.
             Give yourself a round of applause! You did it, well done! 
            </p>
-           <Button className={styles.learnmorebtn} size='large' >
+           <Button className={styles.learnmorebtn} size='large'  shape='round'>
            <a
             href = 'mailto:creareafrica@gmail.com?body="I would like to a request a demo"&subject="Demo"'> 
              Learn more</a> 
@@ -196,7 +196,8 @@ function HomePage() {
         
         </div> 
         <div className={styles.featcarousel}>
-          <p> We offer a wide range of features </p>
+          <p> We offer a wide range of features  to <br/>
+          help you manage your operations  </p>
           <MultiCarousel features={features}/>
         </div>
         

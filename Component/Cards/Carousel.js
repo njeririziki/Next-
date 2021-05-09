@@ -9,7 +9,7 @@
 
  const FeatCarousel = () => {
      return ( 
-       <div className={styles.svg}>
+       <div className={styles.svgcont}>
         <Carousel 
          autoplay
          effect='fade' dots={false}>

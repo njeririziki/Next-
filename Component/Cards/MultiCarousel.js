@@ -53,16 +53,17 @@ const MultiCarousel = (props) => {
   swipeable={true}
   draggable={false}
   showDots={false}
-  arrows={true}
+  arrows={ true}
   responsive={responsive}
   ssr={true} // means to render carousel on server-side.
   infinite={true}
- // autoPlay={props.deviceType !== "mobile" ? true : false}
- // autoPlaySpeed={40000}
+  //slidesToSlide={props.deviceType !== "mobile" ? 1 : 3}
+  autoPlay={props.deviceType !== "mobile" ? true : false}
+  autoPlaySpeed={4000}
   className={styles.multicarousel}
   keyBoardControl={true}
   customTransition="all .5"
-  //transitionDuration={1000}
+  transitionDuration={1000}
   //containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile"]}
   deviceType={props.deviceType}
@@ -75,18 +76,20 @@ const MultiCarousel = (props) => {
      </p>
  })}    */}
 
-<div className={styles.featcards}>
+<div >
     <Card
+      className={styles.featcards}
     cover={ <img src="/payment_completed.svg" alt='Cover'
     width='300px' height='300px'/>}>
         <Meta
         title='Fast payments'
-        description=' the snap of a fonger '
+        description=' At the snap of a finger '
         />
     </Card>
 </div>
-  <div className={styles.featcards}> 
+  <div > 
       <Card
+      className={styles.featcards}
     cover={ <img src="/cash-register-min.jpg" alt='Cover'
     width='300px' height='300px'/>}>
         <Meta
@@ -95,8 +98,9 @@ const MultiCarousel = (props) => {
         />
     </Card>
     </div>
-  <div className={styles.featcards}>
+  <div >
   <Card
+  className={styles.featcards}
     cover={ <img src="/Error_notification.svg" alt='Cover'
     width='300px' height='300px'/>}>
         <Meta
@@ -105,16 +109,7 @@ const MultiCarousel = (props) => {
         />
     </Card>
   </div>
-  <div className={styles.featcards}> 
-      <Card
-    cover={ <img src="/cash-register-min.jpg" alt='Cover'
-    width='300px' height='300px'/>}>
-        <Meta
-        title=' Weekly reports'
-        description=' Track all the transactions '
-        />
-    </Card>
-    </div>
+
  
 </Carousel>
      );

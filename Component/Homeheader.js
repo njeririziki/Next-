@@ -29,7 +29,7 @@ const HeaderComp=({split,whypg})=>{
        <a className={styles.flinks}> About </a>
        </Link>
        <Link href='/features'>
-       <a className={ styles.shalfword}>Features</a>
+       <a className={ styles.flinks}>Features</a>
        </Link>
        {/* <Link href='/about'>
        <a className={split? styles.shalfword:styles.flinks}> Contact</a>

@@ -196,7 +196,7 @@ function HomePage() {
         
         </div> 
         <div className={styles.featcarousel}>
-          <p> We offer a wide range of features  to <br/>
+          <p> We offer a wide range of features  to<br/>
           help you manage your operations  </p>
           <MultiCarousel features={features}/>
         </div>
@@ -219,7 +219,7 @@ function HomePage() {
         </div> 
         <div className={styles.thirdpage}>
        
-          <p>Our Packages</p>
+          <p>Choose your plan </p>
           <div className={styles.grid}>
           <GridList  data={items} />  
           </div>

@@ -108,6 +108,18 @@ const MultiCarousel = (props) => {
         description=' You stay upto date with everything '
         />
     </Card>
+  
+  </div>
+  <div>
+  <Card
+  className={styles.featcards}
+    cover={ <img src="/printer.jpg" alt='Cover'
+    width='300px' height='300px'/>}>
+        <Meta
+        title=' Monthly reports'
+        description=' You stay upto date with everything '
+        />
+    </Card>
   </div>
 
  

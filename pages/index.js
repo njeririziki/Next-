@@ -55,7 +55,7 @@ const premlist =(
     <ul>
       <li> Standard package</li>
       <li>Taxes</li>
-      <li> Customized Reports</li>
+      <li> Daily Reports</li>
       <li> Notifications</li>
       <li> Analytics</li>
     </ul>

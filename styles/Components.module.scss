@@ -13,6 +13,13 @@
     flex-direction:column;
     justify-content:space-between;   
  }
+ .socials{
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;  
+   width: 10vw;
+   font-size: 1.5em;
+ }
  .smallheader{
     display: flex;
     flex-direction: row;
@@ -103,6 +110,10 @@
        width: 300px ;
        height: 300px
     
+    }
+    .socials{
+      width: 40vw;
+     
     }
     .multicarousel{
       width: 80%;

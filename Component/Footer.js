@@ -23,12 +23,12 @@ const Contacts=(
 </div>
 )
 const Socials=(
-  <div className={styles.itemsdiv}>
-  <p><TwitterOutlined/>  @hasibu </p> 
-  <p>  <FacebookOutlined/>  Hasibu Africa </p> 
-  <p> <InstagramFilled/>  hasibu_africa </p> 
-  <p> <GithubFilled/>  Hasibu-Suite </p> 
-  <p> <SlackOutlined/>  @hasibusuite </p> 
+  <div className={styles.socials} >
+  <TwitterOutlined/> 
+    <FacebookOutlined/>  
+   <InstagramFilled/>  
+   <GithubFilled/> 
+   <SlackOutlined/> 
 </div>
 )
 
@@ -44,9 +44,7 @@ const SmallScreen=()=>{
       <Panel header="Contacts" key="2">
         {Contacts}
       </Panel>
-      <Panel header="Socials" key="3">
-        {Socials}
-      </Panel>
+      {Socials}
     </Collapse>
    <p>@creareafrica</p> 
      </div>

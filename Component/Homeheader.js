@@ -14,7 +14,7 @@ const HeaderComp=({split,whypg})=>{
   
             <div 
             className={whypg? styles.scrolheader:styles.header}>
-            <Link href='/'>
+            <Link  className={styles.logo} href='/'>
             <h1>Hasibu</h1>  
            
             </Link>

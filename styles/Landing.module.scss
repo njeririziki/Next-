@@ -59,6 +59,7 @@
   flex-direction: row;
   width:auto;
   height:40px; 
+  cursor: pointer;
 }
 .headerdiv{
     display: flex;
@@ -93,7 +94,7 @@
   align-self: center;
   width: 20vw;
   display: flex;
- justify-content: space-evenly;
+ justify-content: space-between;
 }
 .button{  
    margin: 2em 0em 0em  8em;
@@ -210,6 +211,7 @@
     height:auto;
     width:100vw;
     font-size: 3em;
+    text-align: center;
   //  background: #e1eff7;
  //   background-color: #001528;
  //    color: #f1efef;
@@ -267,6 +269,7 @@
     height: 100vh;
     font-size: 2em;
     font-weight: 400;
+    text-align: center;
 // background-color: #eff5f8;
 }
 .reviewcontainer{
@@ -436,6 +439,9 @@
         font-weight: 300;
         font-size: 1.3em;
         text-align: center;
+    }
+    .breadcrumbs{
+        width: 30vw;
     }
     .svg{
         //align-self: center;

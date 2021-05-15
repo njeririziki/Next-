@@ -16,8 +16,9 @@ $imagedir: '../public';
     display: flex;
     flex-direction: row;
     height: 100vh;
-    justify-content: flex-end;
-    @include background-image('features-transparent-min.png',#f1f8f5,contain,left )
+    justify-content: center;
+    background-color: var(--lightblue);
+   // @include background-image('features-transparent-min.png',#f1f8f5,contain,left )
    }
    .grid{
      //  margin-top:100px;
@@ -31,18 +32,20 @@ $imagedir: '../public';
    .title{
       align-self: center;
       font-size: 4em;
-      font-weight: 600;
+      font-weight: 700;
       color: #06474e;
       font-family: 'Barlow', sans-serif; 
+      text-align: center;
    }
    .subtitle{
     align-self: center;
-    font-size: 3em;
-    font-weight: 300; 
+    font-size: 2em;
+    font-weight: 400; 
     padding-right: 2em;
-    width: 65vw;
+    width: 45vw;
     color: #265257;
     font-family: 'Barlow Condensed', sans-serif; 
+    text-align: center;
    }
    .spage{
     display: flex;
@@ -51,7 +54,7 @@ $imagedir: '../public';
    
     height: auto;
    // background-color: var(--black);
-     background-color:#d8e8ea ;
+     background-color:#ffffff;//#d8e8ea ;
     //background-image: linear-gradient(to right bottom, rgba(5, 5, 5, 0.7), rgb(192,192,192));
     padding: 1em 0em 4em 0em;
    
@@ -111,8 +114,8 @@ $imagedir: '../public';
 
 @media (max-width: 425px) {
     .fpage{
-        justify-content: flex-end;
-        @include background-image('features-transparent.png',#f6f9fc,cover,left )
+       // justify-content: flex-end;
+       // @include background-image('features-transparent.png',#f6f9fc,cover,left )
     }
     .spage{
         display: flex;

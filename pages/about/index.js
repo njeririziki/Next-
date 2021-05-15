@@ -65,7 +65,7 @@ const screen = Grid.useBreakpoint()
            {screen.xs? <Books  className={styles.svg2} />:'' }
            </div>
        </div>
-       <div className={styles.missionpg}>
+       {/* <div className={styles.missionpg}>
        <div className={styles.textdiv3}>
            <h1 className={styles.title3} >
             Our Mission.
@@ -75,7 +75,7 @@ const screen = Grid.useBreakpoint()
           To shape the way businesses operate 
            
            </h1 >
-       </div>
+       </div> */}
       
      <Footer/>
           

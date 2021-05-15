@@ -110,7 +110,7 @@ const MultiCarousel = (props) => {
     </Card>
   
   </div>
-  <div>
+  <div style={{width:' 300px'}}>
   <Card
   className={styles.featcards}
     cover={ <img src="/printer.jpg" alt='Cover'

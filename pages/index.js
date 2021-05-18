@@ -195,8 +195,8 @@ function HomePage() {
         
         </div> 
         <div className={styles.featcarousel}>
-          <p> We offer a wide range of features  to<br/>
-          help you manage your operations  </p>
+          <p style={{padding:'1em'}}> We offer a wide range of features 
+            </p>
           <MultiCarousel features={features}/>
         </div>
         

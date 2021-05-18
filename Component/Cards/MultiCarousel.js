@@ -76,51 +76,48 @@ const MultiCarousel = (props) => {
      </p>
  })}    */}
 
-<div >
+
     <Card
       className={styles.featcards}
     cover={ <img src="/payment_completed.svg" alt='Cover'
-    width='300px' height='300px'/>}>
+     className={styles.coverimg}/>}>
         <Meta
         title='Fast payments'
         description=' At the snap of a finger '
         />
     </Card>
-</div>
-  <div > 
+
       <Card
       className={styles.featcards}
     cover={ <img src="/cash-register-min.jpg" alt='Cover'
-    width='300px' height='300px'/>}>
+     className={styles.coverimg}/>}>
         <Meta
         title=' Weekly reports'
         description=' Track all the transactions '
         />
     </Card>
-    </div>
-  <div >
+  
   <Card
   className={styles.featcards}
     cover={ <img src="/Error_notification.svg" alt='Cover'
-    width='300px' height='300px'/>}>
+     className={styles.coverimg}/>}>
         <Meta
         title=' Custom notifications'
         description=' You stay upto date with everything '
         />
     </Card>
   
-  </div>
-  <div style={{width:' 300px'}}>
+
   <Card
   className={styles.featcards}
     cover={ <img src="/printer.jpg" alt='Cover'
-    width='300px' height='300px'/>}>
+     className={styles.coverimg}/>}>
         <Meta
         title=' Monthly reports'
         description=' You stay upto date with everything '
         />
     </Card>
-  </div>
+ 
 
  
 </Carousel>

@@ -21,8 +21,8 @@ const WhyHasibu = () => {
               Choose  <span style={{color:'#1890FF'}}> Hasibu</span>
             </h1> 
             <h1 className={styles.subtitle}>
-       We set your business up with solutions that uniquely designed for you. Contact us
-       for more details about our amazing features and more.
+              We set your business up with solutions that uniquely designed for you. Contact us
+              for more details about our amazing features and more.
             </h1>
             <Button/>
           

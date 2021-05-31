@@ -10,7 +10,7 @@ import Analytics from '../../public/Analytics.svg'
  import styles from '@/styles/Features.module.scss'
  import Footer from '@/components/Footer'
  import Carousel from '@/components/Cards/MultiCarousel'
-
+ import Button from '@/components/Button/Button'
 
 const items=[
    {   key:1,
@@ -49,7 +49,7 @@ const Features = () => {
                
                <p className={styles.subtitle}> We provide a variety of features essential to your business.
                All our packages include full tech support round the clock, anywhere anytime  </p>
-                      
+               <Button/>
                             </div> 
                 </div> 
              

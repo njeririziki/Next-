@@ -157,7 +157,6 @@ function HomePage() {
       
          </div>
          {screen.xs?
-        
           <Analytics className={styles.svg}/> 
          :''}
          

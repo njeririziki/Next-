@@ -7,6 +7,7 @@ $imagedir: '../public';
  background-size: $background-size;
  background-color: $background-color;
 }
+
  .root{
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ $imagedir: '../public';
    
     height: auto;
    // background-color: var(--black);
-     background-color:#ffffff;//#d8e8ea ;
+     background-color:#f5f5f5;//#d8e8ea ;
     //background-image: linear-gradient(to right bottom, rgba(5, 5, 5, 0.7), rgb(192,192,192));
     padding: 1em 0em 4em 0em;
    

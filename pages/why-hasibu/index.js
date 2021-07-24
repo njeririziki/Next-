@@ -39,8 +39,7 @@ const WhyHasibu = () => {
             </h1> 
          </div> */}
         <div className={styles.nextpage}>
-            <div className={styles.cards}>  
-               
+            <div className={styles.cards}>      
             <div className={styles.svgcontainer} >
             <Cloud  className={styles.othersvg}/>
             </div>
